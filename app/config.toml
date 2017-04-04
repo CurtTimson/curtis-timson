@@ -1,0 +1,4 @@
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "bleak"
+baseurl = "http://replace-this-with-your-hugo-site.com/"
