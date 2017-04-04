@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/CurtTimson/curtis-timson/issues"
   },
-  "homepage": "https://github.com/CurtTimson/curtis-timson#readme"
+  "homepage": "https://github.com/CurtTimson/curtis-timson#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
