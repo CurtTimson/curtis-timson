@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/CurtTimson/curtis-timson#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
+    "require-dir": "^0.3.1"
   }
 }
