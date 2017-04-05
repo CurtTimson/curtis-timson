@@ -5,7 +5,7 @@ baseurl = "https://curttimson.github.io/curtis-timson/"
 
 [params]
   # Warning Keys are case sensitives
-  Subtitle = "front-end Developer"
+  Subtitle = "front-end developer"
 
   # Google analytics
   googleAnalyticsUserID = ""
