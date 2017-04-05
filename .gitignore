@@ -1,5 +1,5 @@
 node_modules
 .publish
 
-app/themes/bleak/
-app/public
+themes/bleak/
+public
