@@ -1,0 +1,24 @@
+{
+  "name": "curtis-timson",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CurtTimson/curtis-timson.git"
+  },
+  "author": "Curtis Timson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CurtTimson/curtis-timson/issues"
+  },
+  "homepage": "https://github.com/CurtTimson/curtis-timson#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
+    "require-dir": "^0.3.1"
+  }
+}
