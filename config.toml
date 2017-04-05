@@ -2,3 +2,22 @@ languageCode = "en-us"
 title = "Curtis Timson"
 theme = "bleak"
 baseurl = "https://curttimson.github.io/curtis-timson/"
+
+[params]
+  # Warning Keys are case sensitives
+  Subtitle = "front-end Developer"
+
+  # Google analytics
+  googleAnalyticsUserID = ""
+
+  [params.author]
+    firstName = "Curtis"
+    lastName = "Timson"
+    gender = "male"
+    userName = "curt"
+    image = "//www.gravatar.com/avatar/15a556c8b58e8aefa727088885925a12.png"
+    website = "http://curtistimson.co.uk"
+    twitter = "curty_"
+    github = "curttimson"
+    linkedin = "curtistimson"
+    gravatarHash = "15a556c8b58e8aefa727088885925a12"
