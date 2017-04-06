@@ -6,7 +6,7 @@ baseurl = "https://curttimson.github.io/curtis-timson/"
 [params]
   # Warning Keys are case sensitives
   Subtitle = "front-end developer"
-
+  cover = "images/cover.jpg"
   # Google analytics
   googleAnalyticsUserID = ""
 
