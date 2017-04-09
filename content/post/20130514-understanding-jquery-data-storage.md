@@ -1,10 +1,10 @@
 +++
 tags = ["data-attributes", "expando", "html5", "jQuery", "jquery-data"]
 featured = true
-description = "It is a common misunderstanding that .data("key") is simply a shortcut for .attr("data-key"). data() does read HTML5 data attributes, but this is only the first time it is called, as per the documentation"
+description = "It is a common misunderstanding that .data('key') is simply a shortcut for .attr('data-key')"
 date = "2013-05-14T00:00:00"
 share = true
-image = ""
+image = "images/post/jquery.jpg"
 title = "Understanding jQuery data() storage"
 slug = "understanding-jquery-data-storage"
 author = "Curtis Timson"
