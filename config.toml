@@ -3,6 +3,9 @@ title = "Curtis Timson"
 theme = "bleak"
 baseurl = "https://curttimson.github.io/curtis-timson/"
 
+[permalinks]
+  post = "/post/:slug/"
+
 [params]
   # Warning Keys are case sensitives
   Subtitle = "front-end developer"
