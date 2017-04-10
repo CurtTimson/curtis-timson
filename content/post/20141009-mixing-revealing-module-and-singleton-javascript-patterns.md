@@ -1,6 +1,6 @@
 +++
 tags = ["best-practice", "encapsulation", "javascript", "patterns", "revealing-module", "singleton"]
-featured = false
+featured = true
 description = ""
 date = "2014-10-09T00:00:00"
 share = true
