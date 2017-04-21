@@ -65,10 +65,10 @@ The browser's interpretation of bold/italic will never be as nice as the custom 
 Below is an example of the browser's interpretation of italic vs the "Algreya-Italic.otf" file:
 
 <strong>Browser Italic:</strong>
-<img src="../../images/post/browser-font.jpg" alt="browser-font" width="490" height="65" class="alignnone size-full wp-image-171" />
+<img src="../../../images/post/browser-font.jpg" alt="browser-font" width="490" height="65" class="alignnone size-full wp-image-171" />
 
 <strong>Type-Face Italic:</strong>
-<img src="../../images/post/type-face-italic.jpg" alt="type-face-italic" width="450" height="71" class="alignnone size-full wp-image-172" />
+<img src="../../../images/post/type-face-italic.jpg" alt="type-face-italic" width="450" height="71" class="alignnone size-full wp-image-172" />
 
 The best way to avoid this is to <strong>use the same font-family name for each definition</strong>.
 
