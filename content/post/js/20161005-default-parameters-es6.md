@@ -1,7 +1,7 @@
 +++
 tags = ["es6", "javascript", "function", "parameters"]
 featured = false
-description = ""
+description = "Learn how to apply default function parameters with ECMAScript 6"
 date = "2016-10-05T00:00:00"
 share = true
 image = "images/post/es6-parameter.jpg"
