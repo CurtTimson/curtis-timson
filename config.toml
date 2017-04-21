@@ -4,8 +4,7 @@ theme = "bleak"
 baseurl = "https://curttimson.github.io/curtis-timson/"
 Paginate = 20
 
-[permalinks]
-  post = "/post/:slug/"
+
 
 [params]
   # Warning Keys are case sensitives
