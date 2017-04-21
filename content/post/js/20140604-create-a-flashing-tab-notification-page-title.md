@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/js/create-a-flashing-tab-notification-page-title/"
+]
 +++
 
 Page title notifications switch between the default page title and a notification message continously in order to grab the user's attention. This is commonly used with chat applications.

@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/css/managing-font-face-definitions-with-less/"
+]
 +++
 
 A typical `@font-face` definition looks something like this:

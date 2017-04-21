@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/js/default-negative-variables-to-zero-in-javascript/"
+]
 +++
 
 If you need to default a value to `0` if its negative, you could do:

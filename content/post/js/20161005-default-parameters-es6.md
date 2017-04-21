@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/js/default-parameters-es6/"
+]
 +++
 With ES5 if you wish to set default parameters on a javascript function you would be required to check the value and supply a default if one hadn't been set.
 

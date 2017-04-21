@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/angularjs/filtering-arrays-in-angularjs/"
+]
 +++
 Previously <a href="http://curtistimson.co.uk/angularjs/setting-up-a-simple-angularjs-app-to-display-an-array/" title="Setting up a simple AngularJS app to display an array">I wrote an article</a> on how to display data from a simple javascript array using AngularJS.
 

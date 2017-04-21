@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/tools/quickly-create-html-elements-in-jsfiddle/"
+]
 +++
 
 In case you haven't already heard of it, <a href="http://jsfiddle.net/">jsFiddle</a> is a web application which allows you to enter HTML, CSS and Javascript into different windows and render the output. It's a great tool for testing various front-end concepts, and then "fiddles" can be saved and shared.

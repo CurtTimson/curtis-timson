@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/less/using-font-face-and-preventing-faux-styles/"
+]
 +++
 `@font-face` is used in CSS to define a custom font style for a web page.
 

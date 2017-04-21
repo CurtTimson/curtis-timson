@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/jquery/understanding-jquery-data-storage/"
+]
 +++
 
 It is a common misunderstanding that `.data("key")` is simply a shortcut for `.attr("data-key")`.

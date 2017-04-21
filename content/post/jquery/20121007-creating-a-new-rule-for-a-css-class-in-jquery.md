@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/jquery/creating-a-new-rule-for-a-css-class-in-jquery/"
+]
 
 +++
 

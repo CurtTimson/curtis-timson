@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/jquery/namespacing-jquery-event-handlers/"
+]
 +++
 
 If we are to attach 2 or more event handlers to an element these will become stacked and run linear in the order they were attached.

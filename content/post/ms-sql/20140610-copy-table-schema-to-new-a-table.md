@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/ms-sql/copy-table-schema-to-new-a-table/"
+]
 +++
 
 In SQL Server, `SELECT INTO` is used to copy data from an existing table/s into a new one.

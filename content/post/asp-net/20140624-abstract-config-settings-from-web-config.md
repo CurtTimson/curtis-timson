@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/asp-net/abstract-config-settings-from-web-config/"
+]
 +++
 
 In ASP.NET, application settings can be specified in the `web.config` file such as:

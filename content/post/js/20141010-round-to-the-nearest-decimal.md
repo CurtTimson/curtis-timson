@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/js/round-to-the-nearest-decimal/"
+]
 +++
 
 If we need round to the nearest whole number, we can use the `Math.round()` function to return this:

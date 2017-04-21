@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/xslt/how-to-prevent-self-closing-elements-in-xslt/"
+]
 
 +++
 

@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/js/preventing-console-log-issues-in-ie/"
+]
 +++
 
 In some older browsers, including versions of Internet Explorer, `window.console` doesn't exist and therefore calling `console.log()` will result in an error.

@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/asp-net/how-to-store-razor-helpers-globally/"
+]
 +++
 ASP.NET MVC Razor helpers are a great way of reducing duplicated code by containing code snippets in a View which can then be called multiple times.
 

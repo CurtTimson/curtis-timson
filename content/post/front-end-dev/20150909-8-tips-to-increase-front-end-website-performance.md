@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/front-end-dev/8-tips-to-increase-front-end-website-performance/"
+]
 +++
 Recently I've been working on front-end performance improvements for a large web application and would like to share with you my findings. The following, in no particular order, are simple tips for achieving greater website performance:
 

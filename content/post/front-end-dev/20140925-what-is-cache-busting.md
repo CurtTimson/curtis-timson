@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/front-end-dev/what-is-cache-busting/"
+]
 +++
 
 A cache-buster is a unique string which is appended to a URL in the form of a [query string][1].

@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/js/check-javascript-function-exists-before-calling-it/"
+]
 
 +++
 

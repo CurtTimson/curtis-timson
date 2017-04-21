@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/angularjs/setting-up-a-simple-angularjs-app-to-display-an-array/"
+]
 +++
 <a href="https://angularjs.org/">AngularJS</a> is a powerful Single-Page-Application javascript framework created by Google.
 

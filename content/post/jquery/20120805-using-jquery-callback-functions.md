@@ -11,6 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+aliases = [
+    "/jquery/using-jquery-callback-functions/"
+]
 
 +++
 
