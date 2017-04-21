@@ -18,7 +18,7 @@ aliases = [
 
 Page title notifications switch between the default page title and a notification message continously in order to grab the user's attention. This is commonly used with chat applications.
 
-<img src="../../images/post/newchatmessage.gif" alt="newchatmessage" width="245" height="45" class="alignnone size-full wp-image-71" />
+<img src="../../../images/post/newchatmessage.gif" alt="newchatmessage" />
 
 I've written a small javascript object which can be used to switch on and off page title notifications.
 
