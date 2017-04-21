@@ -11,7 +11,9 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
-
+aliases = [
+    "/c-sharp/strongly-typed-stored-procedure-names-in-c-sharp/"
+]
 +++
 
 Calling SQL Stored Procedures in ASP.NET as simple text strings can cause problems such as:
