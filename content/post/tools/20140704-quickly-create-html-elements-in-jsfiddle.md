@@ -56,4 +56,4 @@ Which produces:
 
     <a href="http://curtistimson.co.uk"></a>
 
-<img src="../../images/post/jsfiddle.gif" alt="jsfiddle" />
+<img src="../../../images/post/jsfiddle.gif" alt="jsfiddle" />
