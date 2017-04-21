@@ -46,7 +46,7 @@ This is done by adding the contents of multiple images into one image, then use 
 
 Here is an example of one of Google's current sprite images:
 
-<img src="../../images/post/google-sprite-2015.png" alt="google-sprite-2015" width="167" height="410" class="alignnone size-full wp-image-287" />
+<img src="../../../images/post/google-sprite-2015.png" alt="google-sprite-2015" width="167" height="410" class="alignnone size-full wp-image-287" />
 
 This can then be used in CSS such as:
 
@@ -101,10 +101,10 @@ Therefore moving javascript references further down the page reduces render bloc
 Ideally javascript references should be placed just before the end body tag, <code></body></code>, if for whatever reason this is not possible, aim to have them referenced at least <a href="http://en.wikipedia.org/wiki/Above_the_fold#Below_the_fold" target="_blank">below the fold</a>.
 
 <strong>BAD:</strong>
-<img src="../../images/post/js-bad.jpg" alt="js-bad" width="518" height="158" class="alignnone size-full wp-image-224" />
+<img src="../../../images/post/js-bad.jpg" alt="js-bad" width="518" height="158" class="alignnone size-full wp-image-224" />
 
 <strong>GOOD:</strong>
-<img src="../../images/post/js-good.jpg" alt="js-good" width="518" height="154" class="alignnone size-full wp-image-223" />
+<img src="../../../images/post/js-good.jpg" alt="js-good" width="518" height="154" class="alignnone size-full wp-image-223" />
 
 
 <h3>7. Use data-uri in CSS for small images</h3>
