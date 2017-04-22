@@ -12,6 +12,7 @@ Paginate = 20
   cover = "images/cover.jpg"
   # Google analytics
   googleAnalyticsUserID = ""
+  disqus = "curtis-timson"
 
   [params.author]
     firstName = "Curtis"
