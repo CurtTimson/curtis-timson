@@ -2,6 +2,10 @@
   background-color: #262626;
   padding-top: 10px;
 }
+#footer .col {
+  width: 50%;
+  display: inline-block;
+}
 #footer .credits {
   background-color: #1d1d1d;
 }
