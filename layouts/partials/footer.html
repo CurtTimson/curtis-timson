@@ -30,6 +30,16 @@
 							</script>
 						</div> -->
 					</div>
+					<div class="col">
+						<div class="area">
+							<h2>Recent Posts</h2>
+							<ul>
+								{{ range first 5 .Data.Pages }}
+								<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+								{{ end }}
+							</ul>
+						</div>
+					</div>
 					<section class="credits">
 						<span class="credits-theme">Theme <a href="https://github.com/zenithar/hugo-theme-bleak" target="_blank" rel="nofollow">Bleak</a> by <a href="http://zutrinken.com" target="_blank" rel="nofollow">zutrinken</a></span>
 						<span class="credits-software">Published with <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a></span>
