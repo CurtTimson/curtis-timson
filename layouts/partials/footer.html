@@ -1,5 +1,47 @@
 				<div id="body-class" style="display: none;"></div>
 				<footer id="footer">
+					<section class="copy">
+						<div class="col">
+							<div class="area">
+							<h2>Related Links</h2>
+							<ul>
+								<li><a href="http://css-tricks.com/">CSS Tricks</a></li>
+								<li><a href="http://jsfiddle.net/">JsFiddle</a></li>
+								<li><a href="http://stackoverflow.com/">StackOverflow</a></li>
+								<li><a href="http://xkcd.com/">XKCD</a></li>
+								<li><a href="http://blog.codinghorror.com/">Coding Horror</a></li>
+							</ul>
+							</div>
+						</div>
+						<div class="col">
+							<div class="area stackexchange">
+								<h2>Stack Exchange</h2>
+								<a href="http://stackexchange.com/users/154284" target="_blank">
+									<img src="http://stackexchange.com/users/flair/154284.png" width="208" height="58" alt="profile for Curt on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Curt on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+								</a>
+							</div>
+							<!-- <div class="area">
+								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+								<ins class="adsbygoogle"
+								     style="display:inline-block;width:250px;height:250px"
+								     data-ad-client="ca-pub-3884839674570774"
+								     data-ad-slot="4004627541"></ins>
+								<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div> -->
+						</div>
+						<div class="col">
+							<div class="area">
+								<h2>Recent Posts</h2>
+								<ul>
+									{{ range first 5 .Site.Pages }}
+									<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+									{{ end }}
+								</ul>
+							</div>
+						</div>
+					</section>
 					<section class="credits">
 						<span class="credits-theme">Theme <a href="https://github.com/zenithar/hugo-theme-bleak" target="_blank" rel="nofollow">Bleak</a> by <a href="http://zutrinken.com" target="_blank" rel="nofollow">zutrinken</a></span>
 						<span class="credits-software">Published with <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a></span>
