@@ -30,6 +30,7 @@
 
         <link rel="preload" href="{{ .Site.BaseURL }}js/main.js" as="script" />
         <link rel="preload" href="{{ .Site.BaseURL }}css/main.css" as="style" />
+        <link rel="preload" href="{{ .Site.BaseURL }}css/footer.css" as="style" />
 
     {{ if .Description }}
         <meta name="description" content="{{ .Description }}" />
@@ -134,6 +135,9 @@
 </script>
 
     {{ partial "criticalpath.html" . }}
+
+
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/footer.css" />
 
     </head>
     <body class="home-template">

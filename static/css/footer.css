@@ -1,10 +1,12 @@
 #footer {
   background-color: #262626;
   padding-top: 10px;
+  position: static;
 }
 #footer .col {
   width: 50%;
-  display: inline-block;
+  float: left;
+  box-sizing: border-box;
 }
 #footer .credits {
   background-color: #1d1d1d;
