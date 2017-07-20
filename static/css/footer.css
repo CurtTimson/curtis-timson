@@ -7,6 +7,13 @@
   width: 50%;
   float: left;
   box-sizing: border-box;
+  padding: 0 2em;
+}
+#footer .col h2 {
+  color: #fff;
+}
+#footer .col ul {
+  padding: 0;
 }
 #footer .credits {
   clear: both;
