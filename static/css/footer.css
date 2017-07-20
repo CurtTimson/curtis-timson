@@ -15,6 +15,9 @@
 #footer .col ul {
   padding: 0;
 }
+#footer .col .stackexchange img {
+  margin: 2em 0;
+}
 #footer .credits {
   clear: both;
   background-color: #1d1d1d;
