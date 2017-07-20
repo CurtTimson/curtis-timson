@@ -9,5 +9,6 @@
   box-sizing: border-box;
 }
 #footer .credits {
+  clear: both;
   background-color: #1d1d1d;
 }
