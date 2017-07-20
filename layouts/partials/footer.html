@@ -35,7 +35,7 @@
 							<div class="area">
 								<h2>Recent Posts</h2>
 								<ul>
-									{{ range first 5 .Data.Pages }}
+									{{ range first 5 .Site.Pages }}
 									<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 									{{ end }}
 								</ul>
