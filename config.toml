@@ -11,7 +11,7 @@ Paginate = 20
   Subtitle = "front-end developer"
   cover = "images/cover.jpg"
   # Google analytics
-  googleAnalyticsUserID = ""
+  googleAnalyticsUserID = "UA-50505111-2"
   disqus = "curtis-timson"
 
   [params.author]
