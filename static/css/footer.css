@@ -9,6 +9,12 @@
   box-sizing: border-box;
   padding: 0 2em;
 }
+@media only screen and (max-width: 320px) {
+  #footer .col {
+    width: auto;
+    float: none;
+  }
+}
 #footer .col h2 {
   color: #fff;
 }
