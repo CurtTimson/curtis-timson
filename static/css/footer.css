@@ -1,39 +1,42 @@
-#footer {
+#wrapper#wrapper {
+  padding-bottom: 0;
+}
+#footer#footer {
   background-color: #262626;
   padding-top: 10px;
   position: static;
 }
-#footer .copy {
+#footer#footer .copy {
   max-width: 1200px;
   margin: 0 auto 4em;
   padding: .5em;
   z-index: 10;
 }
-#footer .copy .col {
+#footer#footer .copy .col {
   width: 33%;
   float: left;
   box-sizing: border-box;
   padding: 0 2em;
 }
 @media only screen and (max-width: 320px) {
-  #footer .copy .col {
+  #footer#footer .copy .col {
     width: auto;
     float: none;
   }
 }
-#footer .copy .col h2 {
+#footer#footer .copy .col h2 {
   color: #fff;
 }
-#footer .copy .col ul {
+#footer#footer .copy .col ul {
   padding: 0;
 }
-#footer .copy .col ul li {
+#footer#footer .copy .col ul li {
   margin: 1em 0;
 }
-#footer .copy .col .stackexchange img {
+#footer#footer .copy .col .stackexchange img {
   margin: 2em 0;
 }
-#footer .credits {
+#footer#footer .credits {
   clear: both;
   background-color: #1d1d1d;
 }
