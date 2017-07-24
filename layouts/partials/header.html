@@ -146,25 +146,5 @@
       </div>
       <section id="wrapper" style="display: none;">
         <div id="ajax-container">
-          <nav id="nav" class="nav">
-            <div class="nav-logo">
-              <a href="{{ .Site.BaseURL }}">
-      			  {{ if .Site.Params.logo }}
-      			  	<img src="{{ .Site.Params.logo }}" alt="Logo"/>
-      			  {{ else if .Site.Params.author.gravatarHash }}
-      				  <img src="https://www.gravatar.com/avatar/{{ .Site.Params.author.gravatarHash }}.png?s=32" alt="Logo"/>
-      			  {{ end }}
-              </a>
-            </div>
-            <div class="nav-menu">
-              <a class="rss" href="{{.RSSLink}}">
-                <i class="icon-rss"></i>
-              </a>
-                {{ if .IsPage }}
-                <a class="menu" data-action="toc" data-target="toc"><i class="icon-location"></i></a>
-                {{ end }}
-                {{ if .Site.Menus.main }}
-                <a class="menu" data-action="menu" data-target="menu"><i class="icon-menu"></i></a>
-                {{ end }}
-            </div>
-          </nav>
+
+          {{ partial "nav.html" . }}
