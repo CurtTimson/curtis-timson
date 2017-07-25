@@ -1,7 +1,7 @@
 +++
 tags = ["atom", "ide"]
 featured = false
-description = ""
+description = "x Atom Packages which are useful for front-end development"
 date = "2017-07-25T00:00:00"
 share = true
 title = "x Useful Atom Packages"
