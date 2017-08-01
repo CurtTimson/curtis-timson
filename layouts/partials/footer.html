@@ -1,4 +1,7 @@
 				<div id="body-class" style="display: none;"></div>
+				<div ng-app="ct" ng-controller="mainCtrl">
+					<div lastfmnowplaying config="lastFmConfig"></div>
+				</div>
 				<footer id="footer">
 					<section class="copy">
 						<div class="col">
@@ -82,5 +85,8 @@
 {{ end }}
 
   <noscript><link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css"></noscript>
+	<script type="text/javascript" src="{{ .Site.BaseURL }}/npm/angular.min.js"></script>
+	<script type="text/javascript" src="{{ .Site.BaseURL }}/npm/lastfm-nowplaying.min.js"></script>
+	<script type="text/javascript" src="{{ .Site.BaseURL }}/js/ct.js"></script>
 </body>
 </html>
