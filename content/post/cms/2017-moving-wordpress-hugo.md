@@ -2,7 +2,7 @@
 tags = ["cms", "wordpress", "hugo", "static-site"]
 featured = false
 description = "Read why I've moved from Wordpress CMS to Hugo static site generator"
-date = "2017-08-02T00:00:00"
+date = "2017-08-02T19:45:00"
 share = true
 image = "images/post/hugo.png"
 title = "Moving from Wordpress to Hugo"
