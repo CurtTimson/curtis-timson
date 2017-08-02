@@ -8,7 +8,7 @@ image = "images/post/hugo.png"
 title = "Moving from Wordpress to Hugo"
 slug = "moving-wordpress-hugo"
 author = "Curtis Timson"
-draft = true
+draft = false
 menu = ""
 comments = true
 +++
