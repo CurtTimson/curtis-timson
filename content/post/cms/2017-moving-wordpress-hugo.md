@@ -67,7 +67,7 @@ One of the main disadvantages of Hugo as a CMS is that there is no admin interfa
 
 At very least the end-user would need to learn basic Markdown skills, or use a Markdown WYSIWYG, and then be dependant on a developer deploying their content.
 
-### No User comments
+### No User Comment System
 
 As the application has no database it's not possible for the user to submit a comment to an article.
 
@@ -93,15 +93,54 @@ As the Hugo website states there are a lot of prebuilt Hugo themes available and
 
 For example this blog site is built on the [Bleak](https://themes.gohugo.io/bleak/) theme.
 
+Themes will be stored in the following folder structure:
+
+```
+|--themes
+   |--theme-name
+      |--layouts
+         |--partials
+         |--index.html
+```
+
+If for example you wished to modify the content of the `index.html` you can simply edit the theme, however this would be overwritten next time you updated the theme.
+
+However any file which exists in the root `layouts` folder will overwrite the theme. Therefore you can place your customised version in the following folder structure:
+
+```
+|--layouts
+   |--index.html //custom file
+|--themes
+   |--theme-name
+      |--layouts
+         |--partials
+         |--index.html
+```
+
 
 ## Migrating from Wordpress
 
 ### Wordpress to Markdown conversion
 
+There are various Wordpress plugins available to help you migrate your posts over to Hugo such as:
 
+https://github.com/SchumacherFM/wordpress-to-hugo-exporter
 
+Personally as I didn't have a great deal of posts on Wordpress I migrated these manually and used it as a opportunity to tidy up old content.
 
- - URL aliasing
- - WP to MD conversion
+### Migrating comments to Disqus
+There is a Wordpress plugin available to help migrate your Wordpress comments over to Disqus here:
 
-- Themes
+https://wordpress.org/plugins/disqus-comment-system/
+
+### URL Aliasing
+When migrating from Wordpress I found that I required slightly different URLs for my blog posts. So that I wouldn't lose the link equity from existing sources I added aliases to the front-matter in the Hugo posts. This can be done like so:
+
+```
++++
+title = "Check javascript function exists before calling it"
+aliases = [
+    "/js/check-javascript-function-exists-before-calling-it/"
+]
++++
+```
