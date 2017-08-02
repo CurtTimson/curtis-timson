@@ -144,3 +144,18 @@ aliases = [
 ]
 +++
 ```
+
+## Summary
+
+I highly recommend migrating to a static-site generator for any developer maintaining a blog.
+
+However Hugo isn't the only choice. In fact [StaticGen.com](https://www.staticgen.com/) currently list over 150 different alternatives.
+
+If you have anything you'd like to add please comment below (or create a pull request!)
+
+## Further Reading
+
+- [Smashing Magazine - Why Static Site Generators Are The Next Big Thing](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/)
+- [DWB - An Introduction to Static Site Generators ](https://davidwalsh.name/introduction-static-site-generators)
+- [Hugo vs. Jekyll: Comparing the leading static website generators](https://opensource.com/article/17/5/hugo-vs-jekyll)
+- [Philipp Hauer - Moving from Wordpress to Hugo](https://blog.philipphauer.de/moving-wordpress-hugo/)
