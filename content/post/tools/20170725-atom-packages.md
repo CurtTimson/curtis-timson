@@ -19,7 +19,7 @@ When initially installed Atom isn't very rich in features, however it's heavily 
 ## How to install atom packages
 Atom packages can either be installed using CLI or through Atom itself.
 
-To install through Atom go to `Settings > Install` and search for the package which you wish to install.
+To install through Atom go to **Settings → Install** and search for the package which you wish to install.
 
 ![File Icons](/images/post/atom/package-install.png)
 
@@ -36,3 +36,13 @@ Below are some packages I recommend:
 ### File Icons
 
 ![File Icons](/images/post/atom/file-icons.png)
+
+https://github.com/file-icons/atom
+
+**Settings → Install → file-icons**
+
+```
+apm install file-icons
+```
+
+File Icons updates the tree-view and tab icons within Atom to show an icon which represents the file type. This is very handy when quickly trying to find a particular file, and also adds a bit of colour to the UI.
