@@ -1,3 +1,9 @@
+.lastfm-content{
+  max-width: 1200px;
+  margin: 0 auto 4em;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
 #wrapper#wrapper {
   padding-bottom: 0;
 }

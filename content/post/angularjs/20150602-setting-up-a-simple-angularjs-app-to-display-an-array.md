@@ -67,7 +67,9 @@ Therefore `$scope.users` now references our original array of user data.
 
 Going back to our HTML, we can now back a reference to the controller:
 
+```
    <div ng-app="myApp" ng-controller="myController"></div>
+```
 
 Within this `div` element we can now access the `users` variable. Therefore we can create an unordered list element, and by using `ng-repeat` create a loop of list items. AngularJS uses `{{ }}` to be able to access properties of the current object in the loop.
 
