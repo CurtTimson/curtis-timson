@@ -15,3 +15,11 @@ gulp.task('less', function(){
     .pipe(less())
     .pipe(gulp.dest('static/css'))
 });
+
+gulp.task("copy-npm-files", function () {
+    return gulp.src(['./node_modules/jquery/dist/jquery.min.js',
+                    './node_modules/angular/angular.min.js',
+                    './node_modules/lastfm-nowplaying/dist/lastfm-nowplaying.min.js',
+                    './node_modules/lastfm-nowplaying/dist/lastfm-nowplaying.min.css'])
+        .pipe(gulp.dest('./static/npm/'))
+});
