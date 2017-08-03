@@ -1,8 +1,8 @@
 +++
-tags = ["atom", "ide"]
+tags = ["atom", "ide", "packages"]
 featured = false
 description = "x Atom Packages which are useful for front-end development"
-date = "2017-07-25T00:00:00"
+date = "2017-08-03T00:00:00"
 share = true
 title = "x Useful Atom Packages"
 slug = "x-useful-atom-packages"
@@ -35,9 +35,9 @@ Below are some packages I recommend:
 
 ### File Icons
 
-![File Icons](/images/post/atom/file-icons.png)
-
 https://github.com/file-icons/atom
+
+![File Icons](/images/post/atom/file-icons.png)
 
 **Settings → Install → file-icons**
 
@@ -46,3 +46,18 @@ apm install file-icons
 ```
 
 File Icons updates the tree-view and tab icons within Atom to show an icon which represents the file type. This is very handy when quickly trying to find a particular file, and also adds a bit of colour to the UI.
+
+![File Icons Example](/images/post/atom/file-icons-example.png)
+
+----------------------
+
+
+### Minimap
+
+https://github.com/atom-minimap/minimap
+
+![Minimap Example](/images/post/atom/minimap-example.png)
+
+```
+apm install minimap
+```
