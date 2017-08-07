@@ -2,7 +2,7 @@
 tags = ["atom", "ide", "packages"]
 featured = false
 description = "x Atom Packages which are useful for front-end development"
-date = "2017-08-03T00:00:00"
+date = "2017-08-07T00:00:00"
 share = true
 title = "x Useful Atom Packages"
 slug = "x-useful-atom-packages"
@@ -39,11 +39,7 @@ https://github.com/file-icons/atom
 
 ![File Icons](/images/post/atom/file-icons.png)
 
-**Settings → Install → file-icons**
-
-```
-apm install file-icons
-```
+**Settings → Install → file-icons** | `apm install file-icons`
 
 File Icons updates the tree-view and tab icons within Atom to show an icon which represents the file type. This is very handy when quickly trying to find a particular file, and also adds a bit of colour to the UI.
 
@@ -58,6 +54,18 @@ https://github.com/atom-minimap/minimap
 
 ![Minimap Example](/images/post/atom/minimap-example.png)
 
-```
-apm install minimap
-```
+**Settings → Install → minimap** | `apm install minimap`
+
+Minimap adds a small preview of the contents of the file alongside the scrollbar. This is helpful for quick navigation, and also gives a perspective of whereabouts in the file you're at.
+
+----------------------
+
+## Pigments
+
+https://github.com/abe33/atom-pigments
+
+![Atom Pigments](/images/post/atom/pigments-logo.png)
+
+**Settings → Install → pigments** | `apm install pigments`
+
+![Atom Pigments](/images/post/atom/pigments-example.gif)
