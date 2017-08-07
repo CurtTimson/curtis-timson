@@ -68,4 +68,32 @@ https://github.com/abe33/atom-pigments
 
 **Settings → Install → pigments** | `apm install pigments`
 
+Atom Pigments visualises CSS colours such as Hex and RGB. But it also parses css-preprocessor variables as well as functions. One feature the below animation doesn't represent which I find most helpful is that it will also pick up the value of preprocessor variables even from other files.
+
 ![Atom Pigments](/images/post/atom/pigments-example.gif)
+
+-------------------------
+
+## Highlight Selected
+
+https://atom.io/packages/highlight-selected
+
+![Highlight Selected](/images/post/atom/highlight-example.gif)
+
+**Settings → Install → pigments** | `apm install pigments`
+
+The Highlight Selected package is simple, but very useful. When you select a word in the document, all other instances of this word are highlighted.
+
+--------------------------
+
+## Todo Show
+
+https://atom.io/packages/todo-show
+
+![Todo Show](/images/post/atom/todo-example.png)
+
+**Settings → Install → todo show** | `apm install todo-show`
+
+
+
+---------------------------
