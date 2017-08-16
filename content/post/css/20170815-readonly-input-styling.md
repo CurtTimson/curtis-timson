@@ -23,4 +23,4 @@ input[readonly]
 }
 ```
 
-<script async src="//jsfiddle.net/uzyH5/1394/embed/html,css,result/dark/"></script>
+<iframe width="100%" height="300" src="//jsfiddle.net/uzyH5/1394/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
