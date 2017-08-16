@@ -2,7 +2,7 @@
 tags = ["css", "readonly", "input"]
 featured = false
 description = "How to style readonly attributes on inputs with CSS"
-date = "2017-08-15T00:00:00"
+date = "2017-08-16T19:00:00"
 share = true
 image = "images/post/input-readonly.png"
 title = "Styling readonly attributes with CSS"
