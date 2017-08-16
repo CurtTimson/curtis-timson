@@ -8,7 +8,7 @@ image = "images/post/input-readonly.png"
 title = "Styling readonly attributes with CSS"
 slug = "style-readonly-attribute-css"
 author = "Curtis Timson"
-draft = true
+draft = false
 menu = ""
 comments = true
 +++
