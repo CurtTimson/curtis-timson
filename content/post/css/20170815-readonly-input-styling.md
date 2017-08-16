@@ -22,3 +22,5 @@ input[readonly]
     background-color:#ccc;
 }
 ```
+
+<script async src="//jsfiddle.net/uzyH5/1394/embed/html,css,result/dark/"></script>
