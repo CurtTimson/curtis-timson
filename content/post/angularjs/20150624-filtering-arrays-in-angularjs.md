@@ -15,7 +15,7 @@ aliases = [
     "/angularjs/filtering-arrays-in-angularjs/"
 ]
 +++
-Previously <a href="http://curtistimson.co.uk/angularjs/setting-up-a-simple-angularjs-app-to-display-an-array/" title="Setting up a simple AngularJS app to display an array">I wrote an article</a> on how to display data from a simple javascript array using AngularJS.
+Previously <a href="https://curtistimson.co.uk/post/angularjs/setting-up-a-simple-angularjs-app-to-display-an-array/" title="Setting up a simple AngularJS app to display an array">I wrote an article</a> on how to display data from a simple javascript array using AngularJS.
 
 Following on from that this next article will show you how to filter that same array by particular properties.
 
@@ -102,7 +102,7 @@ Then this can be added to the `ng-repeat` statement:
 
     <li ng-repeat="user in users | UserFilter: 'June 2015'">
 
-See Demo: <a href="http://jsfiddle.net/py9g1L1k/1/" target="_blank">http://jsfiddle.net/py9g1L1k/1/</a>
+See Demo: <a href="https://jsfiddle.net/py9g1L1k/1/" target="_blank">https://jsfiddle.net/py9g1L1k/1/</a>
 
 <h3>Using multiple parameters with custom AngularJS filters</h3>
 
