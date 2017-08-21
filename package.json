@@ -24,6 +24,6 @@
     "require-dir": "^0.3.1"
   },
   "dependencies": {
-    "lastfm-nowplaying": "^1.4.0"
+    "lastfm-nowplaying": "^1.5.0"
   }
 }
