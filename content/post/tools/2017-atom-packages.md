@@ -160,3 +160,13 @@ This package will override Atom's default text editor behaviour with the preset 
 More information about the EditorConfig syntax can be found at [editorconfig.org](http://editorconfig.org/).
 
 ---------------------------
+
+## drag-relative-path
+
+![Todo Show](/images/post/atom/drag-relative-path-example.gif)
+
+**Settings → Install → drag-relative-path** | `apm install drag-relative-path`
+
+Coming from a Visual Studio IDE in the past I'm used to being able to drag and drop JS/CSS files from the tree-view into a HTML file and have this automatically convert into a `script` or `link` references.
+
+This package emulates this ability as well as allowing you to copy from desktop too.
