@@ -12,26 +12,24 @@ menu = ""
 comments = true
 +++
 
-If you're unfamiliar with Atom, it's an open source IDE developed by [GitHub](http://github.com) which I currently use for front-end development projects.
+If you're unfamiliar with Atom, it's an open source IDE developed by [GitHub](http://github.com) which I currently use for front-end development.
 
 When initially installed Atom isn't very rich in features, however it's heavily customisable through [packages](https://atom.io/packages). At the time of writing there are over *6000 packages* available to install.
 
 ## How to install atom packages
-Atom packages can either be installed using CLI or through Atom itself.
+Atom packages can either be installed using a CLI or through Atom itself.
 
 To install through Atom go to **Settings → Install** and search for the package which you wish to install.
 
 ![File Icons](/images/post/atom/package-install.png)
 
-Alternatively installing via CLI is much quicker and requires only the following command:
+Alternatively installing via a CLI is much quicker and requires only the following command:
 
 ```
 apm install <package name>
 ```
 
-## Packages
-
-Below are some packages I recommend:
+## Recommended Packages
 
 ### File Icons
 
@@ -41,7 +39,7 @@ https://github.com/file-icons/atom
 
 **Settings → Install → file-icons** | `apm install file-icons`
 
-File Icons updates the tree-view and tab icons within Atom to show an icon which represents the file type. This is very handy when quickly trying to find a particular file, and also adds a bit of colour to the UI.
+File Icons updates the tree-view and tab icons within Atom to show an icon which represents the file type. This is very handy when quickly trying to find a particular file.
 
 ![File Icons Example](/images/post/atom/file-icons-example.png)
 
@@ -68,7 +66,7 @@ https://github.com/abe33/atom-pigments
 
 **Settings → Install → pigments** | `apm install pigments`
 
-Atom Pigments visualises CSS colours such as Hex and RGB. But it also parses css-preprocessor variables as well as functions. One feature the below animation doesn't represent which I find most helpful is that it will also pick up the value of preprocessor variables even from other files.
+Atom Pigments visualises CSS colours such as Hex and RGB. But it also parses css-preprocessor variables as well as functions. One feature that the below animation doesn't represent which I find helpful is that it will also pick up the value of the preprocessor variables, even when they're declared in different files.
 
 ![Atom Pigments](/images/post/atom/pigments-example.gif)
 
@@ -170,3 +168,7 @@ More information about the EditorConfig syntax can be found at [editorconfig.org
 Coming from a Visual Studio IDE in the past I'm used to being able to drag and drop JS/CSS files from the tree-view into a HTML file and have this automatically convert into a `script` or `link` references.
 
 This package emulates this ability as well as allowing you to copy from desktop too.
+
+---------------------------
+
+I hope you find these suggestions useful. If you have any Atom Packages which you particularly like to use please comment below!
