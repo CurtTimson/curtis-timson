@@ -144,3 +144,19 @@ Becomes:
 ```
 
 Great when you're trying to put a quick bit of HTML together.
+
+---------------------------
+
+## EditorConfig
+
+https://atom.io/packages/editorconfig
+
+**Settings → Install → editorconfig** | `apm install editorconfig`
+
+EditorConfig is a universal file format which helps developers define and maintain consistent coding styles between different editors and IDEs.
+
+This package will override Atom's default text editor behaviour with the preset configuration in the `.editorconfig` file.
+
+More information about the EditorConfig syntax can be found at [editorconfig.org](http://editorconfig.org/).
+
+---------------------------
