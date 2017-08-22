@@ -1,11 +1,11 @@
 +++
 tags = ["atom", "ide", "packages"]
 featured = false
-description = "x Atom Packages which are useful for front-end development"
-date = "2017-08-22T00:00:00"
+description = "8 Atom Packages which are useful for front-end development"
+date = "2017-08-22T22:00:00"
 share = true
-title = "x Useful Atom Packages"
-slug = "x-useful-atom-packages"
+title = "8 Useful Atom Packages"
+slug = "8-useful-atom-packages"
 author = "Curtis Timson"
 draft = true
 menu = ""
