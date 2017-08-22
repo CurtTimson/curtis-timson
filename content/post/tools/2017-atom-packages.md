@@ -2,7 +2,7 @@
 tags = ["atom", "ide", "packages"]
 featured = false
 description = "x Atom Packages which are useful for front-end development"
-date = "2017-08-07T00:00:00"
+date = "2017-08-22T00:00:00"
 share = true
 title = "x Useful Atom Packages"
 slug = "x-useful-atom-packages"
@@ -94,6 +94,6 @@ https://atom.io/packages/todo-show
 
 **Settings → Install → todo show** | `apm install todo-show`
 
-
+Todo Show will collate all the `TODO` comments throughout your code and display them in a quick table. Each record will also have a quick link through to the file and line of code containing the `TODO`.
 
 ---------------------------
