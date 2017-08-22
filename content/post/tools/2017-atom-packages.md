@@ -7,7 +7,6 @@ share = true
 title = "8 Useful Atom Packages"
 slug = "8-useful-atom-packages"
 author = "Curtis Timson"
-draft = true
 menu = ""
 comments = true
 image = "images/post/atom/atom-editor-logo.jpg"
