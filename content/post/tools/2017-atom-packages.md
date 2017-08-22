@@ -97,3 +97,50 @@ https://atom.io/packages/todo-show
 Todo Show will collate all the `TODO` comments throughout your code and display them in a quick table. Each record will also have a quick link through to the file and line of code containing the `TODO`.
 
 ---------------------------
+
+## Emmet
+
+https://atom.io/packages/emmet
+
+**Settings → Install → emmet**
+
+The Emmet package is a plugin for the original [emmit toolkit](https://emmet.io/). Basically this allows you to write CSS selectors in HTML which by pressing tab will parse into a HTML structure.
+
+Here's a simple example:
+
+```
+html>head+body>div.container
+```
+
+Pressing tab this would then become:
+
+```
+<html>
+<head></head>
+<body>
+  <div class="container"></div>
+</body>
+</html>
+```
+
+However emmet also has the ability for more complex syntax, such as loops. For example:
+
+```
+html>head+body>div.container>p.item$*2>a[href='item$']{Link $}
+```
+
+Becomes:
+
+```
+<html>
+<head></head>
+<body>
+  <div class="container">
+    <p class="item1"><a href="item1">Link 1</a></p>
+    <p class="item2"><a href="item2">Link 2</a></p>
+  </div>
+</body>
+</html>
+```
+
+Great when you're trying to put a quick bit of HTML together.
