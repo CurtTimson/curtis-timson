@@ -12,13 +12,13 @@ draft = true
 +++
 [screenshot of site here]
 
-Recently I deployed a new version of a Photography Portfolio, lischana-lane.co.uk, and would like to share the various tools/components I have used to build this.
+Recently I deployed a new version of a photography portfolio, [lischana-lane.co.uk](http://lischana-lane.co.uk), and would like to share the various tools/components I have used to build this.
 
 ## Hugo
 
 [hugo logo]
 
-Similar to this blog, lischana-lane.co.uk is built on the Hugo static site generator. Read more about Hugo in a previous blog post of mine:
+Similar to this blog, lischana-lane.co.uk is built on the Hugo static site generator. Read more about Hugo in a previous blog post:
 
 https://curtistimson.co.uk/post/cms/moving-wordpress-hugo/
 
@@ -28,7 +28,7 @@ The base theme for the Hugo application is the [Hugo Creative Theme](https://git
 
 ## Unitegallery with Flickr / Youtube
 
-[screenshot of unitegallery page (celebration perhaps)]
+[screenshot of unitegallery page]
 
 The original Hugo Creative Theme had support for projects, however these followed a more blog post style format. Therefore this section was customised to provide support for Flickr albums and Youtube videos.
 
