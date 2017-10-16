@@ -18,7 +18,7 @@ Recently I deployed a new version of a photography portfolio, [lischana-lane.co.
 
 [hugo logo]
 
-Similar to this blog, lischana-lane.co.uk is built on the Hugo static site generator. Read more about Hugo in a previous blog post:
+Similar to this blog site, lischana-lane.co.uk is built with Hugo, the static site generator. You can read more about Hugo in a previous blog post:
 
 https://curtistimson.co.uk/post/cms/moving-wordpress-hugo/
 
