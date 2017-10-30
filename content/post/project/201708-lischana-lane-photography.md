@@ -9,6 +9,7 @@ slug = "lischana-lane-photography"
 author = "Curtis Timson"
 comments = true
 draft = true
+image = "/images/post/lischana-lane/lischana-lane-portfolio.png"
 +++
 
 ![Lischana Lane Portfolio](/images/post/lischana-lane/lischana-lane-portfolio.png)
