@@ -2,13 +2,12 @@
 tags = ["project", "hugo", "lastfm", "twitter", "nodejs", "heroku"]
 featured = false
 description = "Read about how a recent Hugo project was built and what components were used"
-date = "2017-10-30T00:00:00"
+date = "2017-10-30T13:15:00"
 share = true
 title = "Lischana Lane Photography Portfolio"
 slug = "lischana-lane-photography"
 author = "Curtis Timson"
 comments = true
-draft = true
 image = "/images/post/lischana-lane/lischana-lane-portfolio.png"
 +++
 
