@@ -2,7 +2,7 @@
 tags = ["project", "hugo", "lastfm", "twitter", "nodejs", "heroku"]
 featured = false
 description = "Read about how a recent Hugo project was built and what components were used"
-date = "2017-08-23T00:00:00"
+date = "2017-10-30T00:00:00"
 share = true
 title = "Lischana Lane Photography Portfolio"
 slug = "lischana-lane-photography"
@@ -10,15 +10,16 @@ author = "Curtis Timson"
 comments = true
 draft = true
 +++
-[screenshot of site here]
+
+![Lischana Lane Portfolio](/images/post/lischana-lane/lischana-lane-portfolio.png)
 
 Recently I deployed a new version of a photography portfolio, [lischana-lane.co.uk](http://lischana-lane.co.uk), and would like to share the various tools/components I have used to build this.
 
 ## Hugo
 
-[hugo logo]
+![Hugo](/images/post/hugo.png)
 
-Similar to this blog site, lischana-lane.co.uk is built with Hugo, the static site generator. You can read more about Hugo in a previous blog post:
+Similar to this blog site, [lischana-lane.co.uk](http://lischana-lane.co.uk) is built with Hugo, the static site generator. You can read more about Hugo in a previous blog post:
 
 https://curtistimson.co.uk/post/cms/moving-wordpress-hugo/
 
@@ -28,7 +29,7 @@ The base theme for the Hugo application is the [Hugo Creative Theme](https://git
 
 ## Unitegallery with Flickr / Youtube
 
-[screenshot of unitegallery page]
+![Unite Gallery](/images/post/lischana-lane/lischana-lane-unitegallery.png)
 
 The original Hugo Creative Theme had support for projects, however these followed a more blog post style format. Therefore this section was customised to provide support for Flickr albums and Youtube videos.
 
@@ -36,7 +37,7 @@ The front-matter in the project markdown files was customised to include a new `
 
 ## Twitter
 
-[screenshot of tweet]
+![Lischana Lane Tweet](/images/post/lischana-lane/lischana-lane-tweet.png)
 
 Another customisation made to the theme was to add the latest tweet from the Portfolio owner beneath the projects. Previously this was a static text area driven from the `config.toml` file.
 
@@ -48,7 +49,7 @@ This NodeJs application is available as a public GitHub repository, [nodejs-twit
 
 ## Lastfm nowplaying
 
-[screenshot lastfm-nowplaying]
+![Lischana Lane LastFm](/images/post/lischana-lane/lischana-lane-lastfm.png)
 
 The final customisation made to the theme was to include the portfolio owner's latest played track recorded on Last.fm.
 
