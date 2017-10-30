@@ -19,7 +19,7 @@ Recently I deployed a new version of a photography portfolio, [lischana-lane.co.
 
 ![Hugo](/images/post/hugo.png)
 
-Similar to this blog site, [lischana-lane.co.uk](http://lischana-lane.co.uk) is built with Hugo, the static site generator. You can read more about Hugo in a previous blog post:
+Similar to this blog site, [lischana-lane.co.uk](http://lischana-lane.co.uk) is built with a static site generator, [Hugo](https://gohugo.io/). You can read more about Hugo in a previous blog post:
 
 https://curtistimson.co.uk/post/cms/moving-wordpress-hugo/
 
@@ -33,13 +33,13 @@ The base theme for the Hugo application is the [Hugo Creative Theme](https://git
 
 The original Hugo Creative Theme had support for projects, however these followed a more blog post style format. Therefore this section was customised to provide support for Flickr albums and Youtube videos.
 
-The front-matter in the project markdown files was customised to include a new `FlickrId` property which correlates with a Flickr Album for fetching the correct images for each project. These are then rendered to the page.
+The front-matter in the project markdown files was customised to include a new `flickrId` property which correlates with a Flickr Album for fetching the correct images for each project. These are then rendered to the DOM using [Unite Gallery](http://unitegallery.net/) which displays the images in a dynamic, responsive collage. Unite Gallery has also added the full screen carousel feature.
 
 ## Twitter
 
 ![Lischana Lane Tweet](/images/post/lischana-lane/lischana-lane-tweet.png)
 
-Another customisation made to the theme was to add the latest tweet from the Portfolio owner beneath the projects. Previously this was a static text area driven from the `config.toml` file.
+Another customisation made to the theme was to add the latest tweet from the portfolio owner beneath the projects. Previously this was a static text area driven from the `config.toml` file.
 
 To do this a new NodeJs application was created and deployed to Heroku in order to return the latest tweet in JSON format:
 
