@@ -24,49 +24,41 @@ I've written a small javascript object which can be used to switch on and off pa
 
 To activate the page title notification call the following:
 
-    PageTitleNotification.On("New Chat Message!");
+    pageTitleNotification.on("New Message!");
 
 Then call the following to turn it off:
 
-    PageTitleNotification.Off();
+    pageTitleNotification.off()
 
-The default speed is 1000 milliseconds, but this can be customised by passing a 2nd parameter to the `On()` function.
+The default speed is 1000 milliseconds, but this can be customised by passing a 2nd parameter to the `on()` function.
 
-    PageTitleNotification.On("New Chat Message!", 5000);
+    pageTitleNotification.on("New Message!", 5000);
 
-**Download**
-To use this download the minified javascript version here:
 
-<a href="https://github.com/CurtTimson/Flashing-Page-Title-Notification/blob/master/PageTitleNotification.min.js" target="_blank">PageTitleNotification.min.js</a>
+## Download
 
-Or you can use the un-minified source code here:
+There are various ways you can integrate this into your project:
 
-    var PageTitleNotification = {
-        Vars:{
-            OriginalTitle: document.title,
-            Interval: null
-        },    
-        On: function(notification, intervalSpeed){
-            var _this = this;
-            _this.Vars.Interval = setInterval(function(){
-                 document.title = (_this.Vars.OriginalTitle == document.title)
-                                     ? notification
-                                     : _this.Vars.OriginalTitle;
-            }, (intervalSpeed) ? intervalSpeed : 1000);
-        },
-        Off: function(){
-            clearInterval(this.Vars.Interval);
-            document.title = this.Vars.OriginalTitle;   
-        }
-    }
+### npm
 
-**View Demo**
-<a href="http://fiddle.jshell.net/Curt/w8QBM/show/light/" target="_blank">http://fiddle.jshell.net/Curt/w8QBM/show/light/</a>
+```
+npm install flashing-page-title-notification --save
+```
 
-Hope this comes in help, comment if you have any issues/suggestions!
+https://www.npmjs.com/package/flashing-page-title-notification
 
-**UPDATE - November 2015**
+### Minified file
 
-New improved version now available on GitHub.
+Download the minified javascript version from GitHub:
 
-<a href="https://github.com/CurtTimson/Flashing-Page-Title-Notification" target="_blank">https://github.com/CurtTimson/Flashing-Page-Title-Notification</a>
+<a href="https://github.com/curttimson/Flashing-Page-Title-Notification/blob/master/dist/PageTitleNotification.min.js" target="_blank">PageTitleNotification.min.js</a>
+
+## Demo
+
+https://curttimson.github.io/Flashing-Page-Title-Notification/Demo/Index.html
+
+## GitHub
+
+Full source code available on GitHub. Please feel free to raise any issues or pull requests!
+
+https://github.com/CurtTimson/Flashing-Page-Title-Notification
