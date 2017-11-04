@@ -45,19 +45,20 @@ There are various ways you can integrate this into your project:
 npm install flashing-page-title-notification --save
 ```
 
+https://www.npmjs.com/package/flashing-page-title-notification
+
 ### Minified file
 
 Download the minified javascript version from GitHub:
 
 <a href="https://github.com/curttimson/Flashing-Page-Title-Notification/blob/master/dist/PageTitleNotification.min.js" target="_blank">PageTitleNotification.min.js</a>
 
-**View Demo**
-<a href="http://fiddle.jshell.net/Curt/w8QBM/show/light/" target="_blank">http://fiddle.jshell.net/Curt/w8QBM/show/light/</a>
+## Demo
 
-Hope this comes in help, comment if you have any issues/suggestions!
+https://curttimson.github.io/Flashing-Page-Title-Notification/Demo/Index.html
 
-**UPDATE - November 2015**
+## GitHub
 
-New improved version now available on GitHub.
+Full source code available on GitHub. Please feel free to raise any issues or pull requests!
 
-<a href="https://github.com/CurtTimson/Flashing-Page-Title-Notification" target="_blank">https://github.com/CurtTimson/Flashing-Page-Title-Notification</a>
+https://github.com/CurtTimson/Flashing-Page-Title-Notification
