@@ -19,16 +19,16 @@ Recently I've started using Jest with AngularJs 1.6 and have put together a step
 
 ## Install Angular Mocks and Jest CLI
 
-To use Jest with AngularJs you will require the Angular Mocks and Jest CLI packages.
+To use Jest with AngularJs you will require the Angular Mocks and Jest CLI packages, which can be installed using npm:
 
-The raw files for these can be accessed here:
-
- - `Angular Mocks`: https://docs.angularjs.org/api/ngMock#module-installation
- - `Jest CLI`: http://facebook.github.io/jest/docs/en/getting-started.html
-
- Alternatively I suggest downloading via npm:
-
- ```
+```
 npm i angular-mocks --save-dev
 npm i jest-cli --save-dev
- ```
+```
+
+Alternatively the raw files for these can be accessed here:
+
+ - Angular Mocks: https://docs.angularjs.org/api/ngMock#module-installation
+ - Jest CLI: http://facebook.github.io/jest/docs/en/getting-started.html
+
+## Create `*.test.js` files
