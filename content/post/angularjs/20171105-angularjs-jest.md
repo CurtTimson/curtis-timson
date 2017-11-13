@@ -103,14 +103,20 @@ describe('Math service - addTwoNumbers', function(){
 });
 ```
 
-### Run the tests and see the failed output
+## Run the tests and see the failed output
 
 Run `npm test` and you should see the following output:
 
 ![Jest Fail Output](/images/post/jest/jest-example-fail.png)
 
-### Add logic to the service and re-run the tests
+## Add logic to the service and re-run the tests
 
 Now if we update our service with the correct logic and re-run the tests we should see them all pass:
 
 ![Jest Pass Output](/images/post/jest/jest-example-pass.png)
+
+## Full Working example
+
+A full working example of this is available on GitHub:
+
+https://github.com/curttimson/angularjs-jest-example
