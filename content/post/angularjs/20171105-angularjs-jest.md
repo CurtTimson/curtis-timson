@@ -15,7 +15,7 @@ comments = true
 
 Jest, a unit testing framework by Facebook, is commonly associated with the React framework. However Jest is not specifically for React, and can be used to test any javascript code you wish.
 
-Recently I've started using Jest with AngularJs 1.6 and have put together a step-by-step guide on how to get setup.
+Recently I've started using Jest with AngularJs 1.6 and have put together the following step-by-step guide on how to get setup.
 
 ## Install Angular Mocks and Jest CLI
 
