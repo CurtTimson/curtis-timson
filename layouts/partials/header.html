@@ -151,4 +151,6 @@
       <section id="wrapper" style="display: none;">
         <div id="ajax-container">
 
-          {{ partial "nav.html" . }}
+          {{ if .IsPage }}
+            {{ partial "nav.html" . }}
+          {{ end }}
