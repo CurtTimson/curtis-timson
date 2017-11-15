@@ -1,5 +1,5 @@
 +++
-tags = ["angularjs", "jest", "unit-test", "javascript", "code-coverage"]
+tags = ["angularjs", "jest", "unit-testing", "javascript", "code-coverage", "npm"]
 featured = false
 description = "AngularJs with Jest unit testing"
 date = "2017-11-05T00:00:00"
@@ -16,6 +16,15 @@ comments = true
 [Jest](https://facebook.github.io/jest/), a unit testing framework by Facebook, is commonly associated with the React JS library. However Jest is not specifically for React, and can be used to test any javascript code you wish.
 
 Recently I've been using Jest with AngularJs 1.6 and have put together the following step-by-step guide on how to get setup.
+
+This guide includes:
+
+ - Installing Angular Mocks and Jest CLI
+ - Creating an AngularJs Service
+ - Create Jest unit test file
+ - Running Jest tests with failed example
+ - Correcting service and running successful Jest tests
+ - TL;DR - Full Working Example on GitHub
 
 ## Install Angular Mocks and Jest CLI
 
