@@ -110,6 +110,20 @@ Now if we update our service with the correct logic and re-run the tests we shou
 
 ![Jest Pass Output](/images/post/jest/jest-example-pass.png)
 
+## Code Coverage
+
+Jest also has the ability to show code coverage across the JS files within the application.
+
+This can be shown by running `jest --coverage`:
+
+```
+"scripts": {
+  "test": "jest --coverage"
+},
+```
+
+![Jest Code Coverage](/images/post/jest/jest-codecoverage.png)
+
 ## Full Working example
 
 A full working example of this is available on GitHub:
