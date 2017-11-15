@@ -13,9 +13,9 @@ menu = ""
 comments = true
 +++
 
-Jest, a unit testing framework by Facebook, is commonly associated with the React framework. However Jest is not specifically for React, and can be used to test any javascript code you wish.
+[Jest](https://facebook.github.io/jest/), a unit testing framework by Facebook, is commonly associated with the React JS library. However Jest is not specifically for React, and can be used to test any javascript code you wish.
 
-Recently I've started using Jest with AngularJs 1.6 and have put together the following step-by-step guide on how to get setup.
+Recently I've been using Jest with AngularJs 1.6 and have put together the following step-by-step guide on how to get setup.
 
 ## Install Angular Mocks and Jest CLI
 
@@ -34,7 +34,7 @@ In your `package.json` file the `test` script can then be set to `jest`:
 },
 ```
 
-## Create Angular Service
+## Create AngularJs Service
 
 For the purpose of this example I've created a simple module with a service that does some basic calculations.
 
@@ -46,7 +46,7 @@ angular.module('mathmodule', [])
   .factory('mathservice', function(){
 
     var addTwoNumbers = function(x, y){
-
+      //add logic later
     };
 
     return {
@@ -59,13 +59,44 @@ angular.module('mathmodule', [])
 
 Next we'll create the unit test file for testing our AngularJs service.
 
-In this file we are:
+In this file we:
 
- - Requiring the files needed for the test. We require AngularJs, Angular Mocks and the actual service we're testing, `mathservice.js`.
- - Describing our tests. In this instance we're describing the service and the function in the service which we are going to test.
- - Mocking the module and injecting the service.
- - Setting up several tests to ensure we receive the correct output from the service.
+ - Require the files needed for the test. This includes the AngularJs framework, Angular Mocks and the actual service we're testing, `mathservice.js`.
 
+```
+require('../node_modules/angular/angular.min.js');
+require('../node_modules/angular-mocks/angular-mocks.js');
+require('./mathservice.js');
+```
+
+ - Create a `describe` function which will group our tests together in the same block. In this instance the block is for testing the `addTwoNumbers` function specifically.
+
+```
+describe('Math service - addTwoNumbers', function(){
+```
+
+ - Mock the AngularJs module and inject the service. This will load the module and service so that we are able to reference the service to call the function.
+
+```
+beforeEach(
+  angular.mock.module('mathmodule')
+);
+
+var _mathservice;
+
+beforeEach(inject((mathservice) => {
+  _mathservice = mathservice;
+}));
+```
+
+ - Set up several tests to ensure we receive the expected output from the function. Individual tests are set up by calling the `it` function. Each `it` function then calls the `addTwoNumbers` function and compares the actual result with the expected result by calling `expect`.
+
+```
+it('1 + 1 should equal 2', function(){
+  var actual = _mathservice.addTwoNumbers(1,1);
+  expect(actual).toEqual(2);
+});
+```
 
 ### mathservice.test.js
 ```
