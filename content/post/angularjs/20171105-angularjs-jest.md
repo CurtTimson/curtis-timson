@@ -51,7 +51,7 @@ For the purpose of this example I've created a simple module with a service that
 
 For now I've left out the logic within the functions to show that these tests fail.
 
-<script src="https://gist.github.com/curttimson/570f07e81d8e87e191315418f4aaab27.js"></script>
+<div data-gist-id="570f07e81d8e87e191315418f4aaab27"></div>
 
 ## Create Jest unit test file
 
@@ -96,7 +96,7 @@ it('1 + 1 should equal 2', function(){
 });
 ```
 
-<script src="https://gist.github.com/curttimson/924072c168afe2754738ef3f86b39a3e.js"></script>
+<div data-gist-id="924072c168afe2754738ef3f86b39a3e"></div>
 
 ## Run the tests and see the failed output
 
@@ -108,7 +108,7 @@ Run `npm test` and you should see the following output:
 
 Now if we update our service with the correct logic and re-run the tests we should see them all pass:
 
-<script src="https://gist.github.com/curttimson/2ed147ad4d98c9bcb9e694d8861f65bd.js"></script>
+<div data-gist-id="2ed147ad4d98c9bcb9e694d8861f65bd"></div>
 
 ![Jest Pass Output](/images/post/jest/jest-example-pass.png)
 
