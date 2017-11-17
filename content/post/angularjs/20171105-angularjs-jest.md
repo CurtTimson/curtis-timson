@@ -1,14 +1,13 @@
 +++
 tags = ["angularjs", "jest", "unit-testing", "javascript", "code-coverage", "npm"]
 featured = false
-description = "AngularJs with Jest unit testing"
+description = "Step-by-step guide on setting up AngularJs with Jest unit testing"
 date = "2017-11-17T18:00:00"
 share = true
 image = "images/post/jest/angular-jest.png"
 title = "AngularJs with Jest Unit Testing"
 slug = "angularjs-jest-unit-testing"
 author = "Curtis Timson"
-draft = true
 menu = ""
 comments = true
 +++
@@ -26,6 +25,7 @@ This guide includes:
  - Create Jest unit test file
  - Running Jest tests with failed example
  - Correcting service and running successful Jest tests
+ - Checking code coverage of tests
  - TL;DR - Full Working Example on GitHub
 
 ## Install Angular Mocks and Jest CLI
