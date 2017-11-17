@@ -4,7 +4,7 @@ featured = false
 description = "AngularJs with Jest unit testing"
 date = "2017-11-05T00:00:00"
 share = true
-image = "images/post/angularjs-logo-1024x547.png"
+image = "images/post/jest/angular-jest.png"
 title = "AngularJs with Jest Unit Testing"
 slug = "angularjs-jest-unit-testing"
 author = "Curtis Timson"
@@ -12,6 +12,8 @@ draft = true
 menu = ""
 comments = true
 +++
+
+![AngularJs with Jest](/images/post/jest/angular-jest.png)
 
 [Jest](https://facebook.github.io/jest/), a unit testing framework by Facebook, is commonly associated with the React JS library. However Jest is not specifically for React, and can be used to test any javascript code you wish.
 
