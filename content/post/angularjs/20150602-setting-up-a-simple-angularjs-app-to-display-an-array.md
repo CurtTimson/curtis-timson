@@ -1,7 +1,7 @@
 +++
 tags = ["angularjs", "array", "controller", "javascript", "spa"]
 featured = false
-description = ""
+description = "How to display an array of data using AngularJs"
 date = "2015-06-02T00:00:00"
 share = true
 image = "images/post/angularjs-logo-1024x547.png"
