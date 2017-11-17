@@ -2,7 +2,7 @@
 tags = ["angularjs", "jest", "unit-testing", "javascript", "code-coverage", "npm"]
 featured = false
 description = "AngularJs with Jest unit testing"
-date = "2017-11-05T00:00:00"
+date = "2017-11-17T18:00:00"
 share = true
 image = "images/post/jest/angular-jest.png"
 title = "AngularJs with Jest Unit Testing"
@@ -125,6 +125,30 @@ This can be shown by running `jest --coverage`:
 ```
 
 ![Jest Code Coverage](/images/post/jest/jest-codecoverage.png)
+
+Now if we add an additional function to the Math Service without any tests then the code coverage report will show a reduced percentage and flag which lines of code are not being covered.
+
+```
+angular.module('mathmodule', [])
+  .factory('mathservice', function(){
+
+    var addTwoNumbers = function(x, y){
+      return x + y;
+    };
+
+    var multiplyTwoNumbers = function(x, y){
+      return x * y;
+    };
+
+    return {
+      addTwoNumbers,
+      multiplyTwoNumbers
+    };
+  });
+```
+
+![Jest Code Coverage Failure](/images/post/jest/jest-codecoverage-fail.png)
+
 
 ## Full Working example
 
