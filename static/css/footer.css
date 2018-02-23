@@ -46,3 +46,7 @@
   clear: both;
   background-color: #1d1d1d;
 }
+
+.bleak-github-button iframe {
+  margin:0;
+}
