@@ -9,3 +9,5 @@ slug = "massively-hugo-theme"
 author = "Curtis Timson"
 comments = true
 +++
+Recently I ported the HTML5 template, Massively, from HTML5 Up to be used as a Hugo theme.
+
