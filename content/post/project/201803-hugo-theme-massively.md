@@ -2,13 +2,12 @@
 tags = ["project", "hugo", "theme", "html5up", "massively"]
 featured = false
 description = "Massively - a HTML5 Up template which has been ported to Hugo static site generator"
-date = "2018-03-20T00:00:00"
+date = "2018-03-28T12:00:00"
 share = true
 title = "Massively Hugo Theme"
 slug = "massively-hugo-theme"
 author = "Curtis Timson"
 comments = true
-draft = true
 image = "images/post/hugo-massively-tn.png"
 +++
 ![Hugo Massively Theme](/images/post/hugo-massively.png)
