@@ -2,7 +2,7 @@
 tags = ["project", "hugo", "theme", "html5up", "dopetrope"]
 featured = false
 description = "Dopetrope - a HTML5 Up template which has been ported to Hugo static site generator"
-date = "2018-04-05T12:50:00"
+date = "2018-04-05T11:55:00"
 share = true
 title = "Dopetrope Hugo Theme"
 slug = "dopetrope-hugo-theme"
