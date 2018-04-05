@@ -25,3 +25,9 @@ https://github.com/curttimson/hugo-theme-massively
 This is the first theme I've ported over to Hugo so I welcome any feedback.
 
 As always if you find any issues please feel free to [raise them](https://github.com/curttimson/hugo-theme-massively/issues/new) or submit pull requests!
+
+## Related Links
+
+- [HTML5 Up](https://html5up.net/)
+- [Hugo Static Site Generator](https://gohugo.io/)
+- [Hugo Themes](https://themes.gohugo.io/)
