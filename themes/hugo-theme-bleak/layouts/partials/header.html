@@ -6,7 +6,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <meta property="og:title" content="{{ if not .IsHome }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}{{ if .IsHome }} &middot; {{ .Site.Params.Subtitle }}{{ end }}" />
+        <meta property="og:title" content="{{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
         <meta property="og:site_name" content="{{ .Site.Title }}" />
         <meta property="og:url" content="{{ .Permalink }}" />
 
@@ -26,11 +26,10 @@
         <meta property="og:type" content="website" />
     {{ end }}
 
-        <title>{{ if not .IsHome }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}{{ if .IsHome }} &middot; {{ .Site.Params.Subtitle }}{{ end }}</title>
+        <title>{{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}</title>
 
         <link rel="preload" href="{{ .Site.BaseURL }}js/main.js" as="script" />
         <link rel="preload" href="{{ .Site.BaseURL }}css/main.css" as="style" />
-        <link rel="preload" href="{{ .Site.BaseURL }}css/ct.css" as="style" />
 
     {{ if .Description }}
         <meta name="description" content="{{ .Description }}" />
@@ -62,7 +61,6 @@
         <link rel="canonical" href="{{ .Permalink }}" />
 
 {{ if .IsPage }}
-    {{ $last := sub (len .Params.tags) 1 }}
     <script type="application/ld+json">
     {
         "@context": "http://schema.org",
@@ -111,7 +109,7 @@
         "datePublished": "{{ .Date.Format "2006-01-02" }}",
         "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
         "wordCount": {{ .WordCount }},
-        "keywords": {{ .Params.tags | jsonify }}
+        {{ if .Params.tags }}"keywords": {{ .Params.tags | jsonify }} {{ end }}
     }
     </script>
 {{ end }}
@@ -129,19 +127,12 @@
     {{ end }}
 
     <script type="text/javascript">
-  var config = {
-    baseUrl: "{{ .Site.BaseURL }}"
-  };
-</script>
+      var config = {
+        baseUrl: "{{ .Site.BaseURL }}"
+      };
+    </script>
 
     {{ partial "criticalpath.html" . }}
-
-
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/ct.css" />
-
-    <link rel="shortcut icon" type="image/png" href="//0.gravatar.com/avatar/15a556c8b58e8aefa727088885925a12.png?s=16"/>
-
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}npm/lastfm-nowplaying.min.css" />
 
     </head>
     <body class="home-template">
@@ -150,7 +141,25 @@
       </div>
       <section id="wrapper" style="display: none;">
         <div id="ajax-container">
-
-          {{ if .IsPage }}
-            {{ partial "nav.html" . }}
-          {{ end }}
+          <nav id="nav" class="nav">
+            <div class="nav-logo">
+              <a href="{{ .Site.BaseURL }}">
+      			  {{ if .Site.Params.logo }}
+      			  	<img src="{{ .Site.Params.logo }}" alt="Logo"/>
+      			  {{ else if .Site.Params.author.gravatarHash }}
+      				  <img src="https://www.gravatar.com/avatar/{{ .Site.Params.author.gravatarHash }}.png?s=32" alt="Logo"/>
+      			  {{ end }}
+              </a>
+            </div>
+            <div class="nav-menu">
+              <a class="rss" href="{{.RSSLink}}">
+                <i class="icon-rss"></i>
+              </a>
+                {{ if .IsPage }}
+                <a class="menu" data-action="toc" data-target="toc"><i class="icon-location"></i></a>
+                {{ end }}
+                {{ if .Site.Menus.main }}
+                <a class="menu" data-action="menu" data-target="menu"><i class="icon-menu"></i></a>
+                {{ end }}
+            </div>
+          </nav>
