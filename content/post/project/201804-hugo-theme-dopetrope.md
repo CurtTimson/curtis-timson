@@ -22,4 +22,6 @@ Full details on how the theme can be used can be found on the README on the GitH
 
 https://github.com/curttimson/hugo-theme-dopetrope
 
+This is the 2nd theme I've ported following the [Massively](/post/project/massively-hugo-theme/) theme recently and welcome any feedback.
+
 As always if you find any issues please feel free to [raise them](https://github.com/curttimson/hugo-theme-dopetrope/issues/new) or submit pull requests!
