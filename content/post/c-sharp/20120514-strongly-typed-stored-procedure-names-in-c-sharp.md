@@ -1,5 +1,5 @@
 +++
-tags = ["C#", "sql-server", "stored-procedure", "strong-type"]
+tags = ["c-sharp", "sql-server", "stored-procedure", "strong-type"]
 featured = false
 description = ""
 date = "2012-05-14T00:00:00"
