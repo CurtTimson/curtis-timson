@@ -18,7 +18,7 @@ This article will step through how to host your Hugo website on Netlify and show
 
 ## Contents
  - [Why Netlify?](#why-netlify)
- - [Netlify Migration](#netlify-migration)
+ - [Netlify Setup](#netlify-setup)
 
 ## Why Netlify?
 
@@ -45,7 +45,7 @@ This, combined with continuous integration, can provide at least the simplest fe
 This isn't a feature I've currently had chance to take advantage of, however Netlify's split testing provides the ability to serve your Hugo application from multiple GitHub branches enabling the ability for A/B Testing.
 
 
-## Netlify Migration
+## Netlify Setup
 
 If you haven't already, go ahead and create a free account on [Netlify](https://www.netlify.com/).
 
@@ -77,6 +77,22 @@ This is the directory which Netlify will deploy. For hugo projects this is `publ
 
 ![Build options](/images/post/hugo-netlify/build-options.png)
 
+Hitting "Deploy Site" will then create the site and start the first deployment!
+
+![Site overview](/images/post/hugo-netlify/site-overview.png)
+
+
+## Custom Domains
+
+By default Netlify will create a subdomain under Netlify.com with a randomly generated name (`https://random-name.netlify.com`).
+
+In this instance it's "vibrant-morse-276f48".
+
+However, Netlify provides the ability to change the site name, and more importantly point a custom domain to the site.
+
+### Changing the site name
+
+If you don't currently have a Custom Domain you can change the netlify site name instead. This can be done from the Overview page by going to "Site Settings".
 
 
 
