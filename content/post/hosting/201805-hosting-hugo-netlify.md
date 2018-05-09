@@ -4,7 +4,7 @@ featured = false
 description = "Step by step tutorial on how to host your Hugo site on Netlify with continuous integration"
 date = "2018-04-20T00:00:00"
 share = true
-image = ""
+image = "images/post/hugo-netlify/hugo-netlify-tn.png"
 title = "Hosting Hugo on Netlify"
 slug = "hugo-netlify"
 author = "Curtis Timson"
@@ -20,6 +20,8 @@ This article will step through how to host your Hugo website on Netlify and show
  - [Why Netlify?](#why-netlify)
  - [Netlify Setup](#netlify-setup)
 
+![Netlify Hugo](/images/post/hugo-netlify/hugo-netlify.png)
+
 ## Why Netlify?
 
 I've been using Netlify to host my static websites for the last few months as an alternative to GitHub Pages. The main advantages I've found for using Netlify over Github Pages are as follows.
@@ -32,7 +34,7 @@ The build process can also be provided on a per-branch basis. This means you can
 
 ### Easy, free, SSL/HTTPS setup
 
-Netlify has an in-built ability to set up your Custom Domain with an SSL certificate, provided by Lets Encrypt. Once our Custom Domain DNS has been verified, it literally takes one click to set up SSL!
+Netlify has an in-built ability to set up your Custom Domain with an SSL certificate, provided by [Lets Encrypt](https://letsencrypt.org/). Once our Custom Domain DNS has been verified, it literally takes one click to set up SSL!
 
 ### Netlify CMS
 
@@ -100,7 +102,17 @@ To point a custom domain to your Netlify site first go to "Settings" then "Domai
 
 ![Custom domain](/images/post/hugo-netlify/custom-domain.png)
 
+Once you've added your domain you'll be provided with hostnames and prompted to point your domain to these hostnames from your domain provider.
 
+### SSL/TLS certificate
+
+As described above Netlify provides an easy way to setup SSL/TLS certificates for your custom domain with the help of [Lets Encrypt](https://letsencrypt.org/).
+
+To do this first you must verify the DNS configuration. This can be done within the Domain Management section.
+
+If you receive an error initially this may be because the hostname switch hasn't yet completed, which can take [up to 48 hours](https://www.smashingmagazine.com/2011/05/introduction-to-dns-explaining-the-dreaded-dns-delay/). However in my experience this is usually far less.
+
+![DNS verify fail](/images/post/hugo-netlify/dns-verify-fail.png)
 
 
 
