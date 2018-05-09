@@ -94,6 +94,15 @@ However, Netlify provides the ability to change the site name, and more importan
 
 If you don't currently have a Custom Domain you can change the netlify site name instead. This can be done from the Overview page by going to "Site Settings".
 
+### Setting Custom Domains
+
+To point a custom domain to your Netlify site first go to "Settings" then "Domain management" and hit "Add custom domain".
+
+![Custom domain](/images/post/hugo-netlify/custom-domain.png)
+
+
+
+
 
 
 ## Related Links
