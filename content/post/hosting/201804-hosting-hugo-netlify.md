@@ -14,7 +14,11 @@ comments = true
 +++
 Recently I've started migrating my static websites from GitHub Pages hosting over to Netlify.
 
-This article will step through how to host your Hugo website on Netlify and show the benefits provided over using GitHub Pages.
+This article will step through how to host your Hugo website on Netlify and show the benefits provided over using GitHub Pages. I'll be using a recent site I developed as an example of how to migrate.
+
+## Contents
+ - [Why Netlify?](#why-netlify)
+ - [Netlify Migration](#netlify-migration)
 
 ## Why Netlify?
 
@@ -39,6 +43,42 @@ This, combined with continuous integration, can provide at least the simplest fe
 ### Split Testing
 
 This isn't a feature I've currently had chance to take advantage of, however Netlify's split testing provides the ability to serve your Hugo application from multiple GitHub branches enabling the ability for A/B Testing.
+
+
+## Netlify Migration
+
+If you haven't already, go ahead and create a free account on [Netlify](https://www.netlify.com/).
+
+### Create a new site
+
+Once you're on the dashboard click on the "New site from Git" button to be taken through to the site creation.
+
+![Create a new site](/images/post/hugo-netlify/create-new-site.png)
+
+Select your Git provider (in this tutorial I'm using GitHub) and select the repository from your account.
+
+Once you have selected the repository you'll be presented with some build options:
+
+#### Branch to deploy
+For this project I'm using the `master` branch
+
+#### Build command
+This should be the command you usually manually run to produce your production ready Hugo site.
+
+For this Hugo project I use a separate config file for production so the command is:
+
+```
+hugo --config config-prod.toml
+```
+
+#### Publish directory
+
+This is the directory which Netlify will deploy. For hugo projects this is `public`.
+
+![Build options](/images/post/hugo-netlify/build-options.png)
+
+
+
 
 ## Related Links
 
