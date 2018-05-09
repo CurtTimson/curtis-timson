@@ -117,6 +117,11 @@ If you receive an error initially this may be because the hostname switch hasn't
 
 
 
+#### Remove GitHub Pages branch
+
+If you've been migrating from GitHub Pages, ensure you remove your old `gh-pages` branch 🙂
+
+
 ## Related Links
 
  - [Netlify](https://www.netlify.com/)
