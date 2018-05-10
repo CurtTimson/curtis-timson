@@ -1,5 +1,5 @@
 +++
-tags = ["hosting", "hugo", "netlify", "continuous-integration"]
+tags = ["hosting", "hugo", "netlify", "continuous-integration", "static-site"]
 featured = false
 description = "Step by step tutorial on how to host your Hugo site on Netlify with continuous integration"
 date = "2018-04-20T00:00:00"
@@ -14,13 +14,30 @@ comments = true
 +++
 Recently I've started migrating my static websites from GitHub Pages hosting over to Netlify.
 
-This article will step through how to host your Hugo website on Netlify and show the benefits provided over using GitHub Pages. I'll be using a recent site I developed as an example of how to migrate.
+This article will step through how to host your static website on Netlify and show the benefits provided over using GitHub Pages. I'll be using a recent Hugo site I developed as an example of how to migrate.
+
+However the majority of this tutorial is relevant for all static site deployments and only the build commands and publish directory will vary dependant on your tech stack.
 
 ## Contents
- - [Why Netlify?](#why-netlify)
- - [Netlify Setup](#netlify-setup)
 
-![Netlify Hugo](/images/post/hugo-netlify/hugo-netlify.png)
+- [Why Netlify?](#why-netlify)
+    - [Continuous Integration](#continuous-integration)
+    - [Easy, free, SSL/HTTPS setup](#easy-free-sslhttps-setup)
+    - [Content Delivery Network](#content-delivery-network)
+    - [Netlify CMS](#netlify-cms)
+    - [Split Testing](#split-testing)
+- [Netlify Site Setup](#netlify-site-setup)
+    - [Create a new site](#create-a-new-site)
+        - [Branch to deploy](#branch-to-deploy)
+        - [Build command](#build-command)
+        - [Publish directory](#publish-directory)
+- [Custom Domains](#custom-domains)
+    - [Changing the site name](#changing-the-site-name)
+    - [Setting Custom Domains](#setting-custom-domains)
+    - [SSL/TLS certificate](#ssltls-certificate)
+    - [Force HTTPS](#force-https)
+- [Continuous Integration / Delivery](#continuous-integration-delivery)
+
 
 ## Why Netlify?
 
@@ -36,6 +53,10 @@ The build process can also be provided on a per-branch basis. This means you can
 
 Netlify has an in-built ability to set up your Custom Domain with an SSL certificate, provided by [Lets Encrypt](https://letsencrypt.org/). Once our Custom Domain DNS has been verified, it literally takes one click to set up SSL!
 
+### Content Delivery Network
+
+Some developers might be used to proxying their static sites through a CDN, such as [Cloudflare](https://www.cloudflare.com/), in order to improve their user's download speeds. However Netlify provides this support internally, removing this complication from our DNS setup. [Read more](https://www.netlify.com/blog/2017/03/28/why-you-dont-need-cloudflare-with-netlify/).
+
 ### Netlify CMS
 
 With the inclusion of a few javascript and configuration files, Netlify can provide a free CMS panel in which users can edit content within the Hugo application.
@@ -47,7 +68,7 @@ This, combined with continuous integration, can provide at least the simplest fe
 This isn't a feature I've currently had chance to take advantage of, however Netlify's split testing provides the ability to serve your Hugo application from multiple GitHub branches enabling the ability for A/B Testing.
 
 
-## Netlify Setup
+## Netlify Site Setup
 
 If you haven't already, go ahead and create a free account on [Netlify](https://www.netlify.com/).
 
@@ -79,7 +100,7 @@ This is the directory which Netlify will deploy. For hugo projects this is `publ
 
 ![Build options](/images/post/hugo-netlify/build-options.png)
 
-Hitting "Deploy Site" will then create the site and start the first deployment!
+Hitting "Deploy Site" will then create the site and start the first deployment! 🚀
 
 ![Site overview](/images/post/hugo-netlify/site-overview.png)
 
@@ -119,17 +140,35 @@ Once this has been verified you'll be prompted to either:
  - Let's Encrypt Certificate
  - Provide your own certificate
 
-Unless you already have your own certificate ready, click on "Let's Encrypt Certificate"
+Unless you already have your own certificate ready, click on "Let's Encrypt Certificate".
+
+A dialog will then appear with the option to provision a certificate.
 
 ![Lets Encrypt](/images/post/hugo-netlify/lets-encrypt.png)
 
+Hit "Provision certificate", and that's it! Your application can now be securely served via HTTPS.
 
 
+### Force HTTPS
+
+Finally, there is the option beneath the SSL setup to force HTTPS so that any calls to HTTP will be redirected to your secure domain.
 
 
-#### Remove GitHub Pages branch
+## Continuous Integration / Delivery
 
-If you've been migrating from GitHub Pages, ensure you remove your old `gh-pages` branch from your repository 🙂
+Now that Netlify is hosting the application we can also take advantage of the Continuous Integration and Continuous Delivery benefits provided.
+
+Whenever a Git Pull Request is made, Netlify will run the build command against the branch to test everything is working as expected.
+
+![Netlify CI](/images/post/hugo-netlify/netlify-ci.png)
+
+Once the pull request has been merged into the deploy branch (in this example, `master`) then Netlify will build and deploy the changes to the production environment.
+
+![Netlify CD](/images/post/hugo-netlify/netlify-cd.png)
+
+------------
+
+I hope this tutorial helps explain the ease at which we can set up a free CI/CD environment for our static applications using Netlify. If you have any questions, please comment below!
 
 
 ## Related Links
