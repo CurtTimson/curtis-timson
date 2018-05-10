@@ -114,12 +114,22 @@ If you receive an error initially this may be because the hostname switch hasn't
 
 ![DNS verify fail](/images/post/hugo-netlify/dns-verify-fail.png)
 
+Once this has been verified you'll be prompted to either:
+
+ - Let's Encrypt Certificate
+ - Provide your own certificate
+
+Unless you already have your own certificate ready, click on "Let's Encrypt Certificate"
+
+![Lets Encrypt](/images/post/hugo-netlify/lets-encrypt.png)
+
+
 
 
 
 #### Remove GitHub Pages branch
 
-If you've been migrating from GitHub Pages, ensure you remove your old `gh-pages` branch 🙂
+If you've been migrating from GitHub Pages, ensure you remove your old `gh-pages` branch from your repository 🙂
 
 
 ## Related Links
