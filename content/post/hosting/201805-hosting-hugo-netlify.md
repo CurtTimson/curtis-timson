@@ -1,22 +1,21 @@
 +++
 tags = ["hosting", "hugo", "netlify", "continuous-integration", "static-site"]
 featured = false
-description = "Step by step tutorial on how to host your Hugo site on Netlify with continuous integration"
-date = "2018-04-20T00:00:00"
+description = "Step by step tutorial on how to host your static site on Netlify with continuous integration"
+date = "2018-05-10T15:40:00"
 share = true
 image = "images/post/hugo-netlify/hugo-netlify-tn.png"
 title = "Hosting Hugo on Netlify"
 slug = "hugo-netlify"
 author = "Curtis Timson"
-draft = true
 menu = ""
 comments = true
 +++
-Recently I've started migrating my static websites from GitHub Pages hosting over to Netlify.
+Recently I've started migrating my static websites hosting from [GitHub Pages](https://pages.github.com/) to [Netlify](https://www.netlify.com/).
 
-This article will step through how to host your static website on Netlify and show the benefits provided over using GitHub Pages. I'll be using a recent Hugo site I developed as an example of how to migrate.
+This article will step through how to host your static website on Netlify and show the benefits provided over using GitHub Pages. I'll be using a recent [Hugo](https://gohugo.io/) site I developed as an example of how to migrate.
 
-However the majority of this tutorial is relevant for all static site deployments and only the build commands and publish directory will vary dependant on your tech stack.
+However, the majority of this tutorial **is not Hugo specific** and is in fact relevant for all static site deployments. Only the build commands and publish directory will vary dependant on your tech stack.
 
 ## Contents
 
@@ -49,17 +48,21 @@ Netlify allows for the ability to build and deploy directly from your GitHub rep
 
 The build process can also be provided on a per-branch basis. This means you can verify that your current build will build and deploy successfully once it's been merged into the branch linked for continuous integration.
 
+GitHub Pages on the other hand, only allows a specific branch (`gh-pages`) to be deployed, and this (at least for Hugo projects) has to be the post-build version of the application, not the source. However, I do believe they provide better support for another static site generator, [Jekyll](https://jekyllrb.com/).
+
 ### Easy, free, SSL/HTTPS setup
 
-Netlify has an in-built ability to set up your Custom Domain with an SSL certificate, provided by [Lets Encrypt](https://letsencrypt.org/). Once our Custom Domain DNS has been verified, it literally takes one click to set up SSL!
+Netlify has an in-built ability to set up your Custom Domain with an SSL certificate, provided by [Lets Encrypt](https://letsencrypt.org/). Once our Custom Domain DNS has been verified, it literally takes a few clicks to set up SSL!
 
 ### Content Delivery Network
 
-Some developers might be used to proxying their static sites through a CDN, such as [Cloudflare](https://www.cloudflare.com/), in order to improve their user's download speeds. However Netlify provides this support internally, removing this complication from our DNS setup. [Read more](https://www.netlify.com/blog/2017/03/28/why-you-dont-need-cloudflare-with-netlify/).
+Some developers might be used to proxying their static sites through a CDN, such as [Cloudflare](https://www.cloudflare.com/), in order to improve their user's download speeds.
+
+However Netlify provides this support internally, removing this complication from our DNS setup. [Read more](https://www.netlify.com/blog/2017/03/28/why-you-dont-need-cloudflare-with-netlify/).
 
 ### Netlify CMS
 
-With the inclusion of a few javascript and configuration files, Netlify can provide a free CMS panel in which users can edit content within the Hugo application.
+With the inclusion of a few javascript and configuration files, Netlify can provide a [free CMS panel](https://www.netlifycms.org/) in which users can edit content within the Hugo application.
 
 This, combined with continuous integration, can provide at least the simplest features of a full stack CMS provider, such as Wordpress.
 
@@ -69,6 +72,8 @@ This isn't a feature I've currently had chance to take advantage of, however Net
 
 
 ## Netlify Site Setup
+
+The following section will walk through the setup of a static site with Netlify.
 
 If you haven't already, go ahead and create a free account on [Netlify](https://www.netlify.com/).
 
@@ -96,7 +101,7 @@ hugo --config config-prod.toml
 
 #### Publish directory
 
-This is the directory which Netlify will deploy. For hugo projects this is `public`.
+This is the directory in your post-build application which Netlify will deploy. For hugo projects this is `public`.
 
 ![Build options](/images/post/hugo-netlify/build-options.png)
 
@@ -108,8 +113,6 @@ Hitting "Deploy Site" will then create the site and start the first deployment! 
 ## Custom Domains
 
 By default Netlify will create a subdomain under Netlify.com with a randomly generated name (`https://random-name.netlify.com`).
-
-In this instance it's "vibrant-morse-276f48".
 
 However, Netlify provides the ability to change the site name, and more importantly point a custom domain to the site.
 
@@ -135,10 +138,7 @@ If you receive an error initially this may be because the hostname switch hasn't
 
 ![DNS verify fail](/images/post/hugo-netlify/dns-verify-fail.png)
 
-Once this has been verified you'll be prompted to either:
-
- - Let's Encrypt Certificate
- - Provide your own certificate
+Once this has been verified you'll be prompted to either use Let's Encrypt or provide your own certificate
 
 Unless you already have your own certificate ready, click on "Let's Encrypt Certificate".
 
@@ -174,4 +174,5 @@ I hope this tutorial helps explain the ease at which we can set up a free CI/CD 
 ## Related Links
 
  - [Netlify](https://www.netlify.com/)
+ - [Netlify CMS](https://www.netlifycms.org/)
  - [Hugo](https://gohugo.io/)
