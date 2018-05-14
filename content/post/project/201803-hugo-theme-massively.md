@@ -16,7 +16,7 @@ Recently I ported the HTML5 template, Massively, from [HTML5 Up](https://html5up
 
 Out of the box the theme can be used as a simple blog site. A live example of this can be found here:
 
-https://curttimson.github.io/hugo-theme-massively/
+https://hugo-theme-massively.netlify.com
 
 Full details on how the theme can be used can be found on the README on the GitHub repo:
 
