@@ -12,7 +12,8 @@ draft = false
 menu = ""
 comments = true
 aliases = [
-    "/js/check-javascript-function-exists-before-calling-it/"
+    "/js/check-javascript-function-exists-before-calling-it/",
+    "/javascript-2/check-javascript-function-exists-before-calling-it/"
 ]
 
 +++

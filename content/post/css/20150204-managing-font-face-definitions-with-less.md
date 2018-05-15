@@ -12,7 +12,8 @@ draft = false
 menu = ""
 comments = true
 aliases = [
-    "/css/managing-font-face-definitions-with-less/"
+    "/css/managing-font-face-definitions-with-less/",
+    "/less/managing-font-face-definitions-with-less/"
 ]
 +++
 
