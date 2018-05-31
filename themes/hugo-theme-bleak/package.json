@@ -20,6 +20,7 @@
     "grunt-sass": "^2.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-uglify": "^3.0.0",
-    "load-grunt-tasks": "^3.5.2"
+    "load-grunt-tasks": "^3.5.2",
+    "run-sequence": "^2.2.1"
   }
 }

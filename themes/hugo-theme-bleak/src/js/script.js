@@ -81,6 +81,7 @@ jQuery(function($) {
        ========================================================================== */
 
     function grid() {
+
         $('.post-list .post .post-image img').each(function() {
             var img = $(this);
             img.load(function() {
@@ -88,8 +89,10 @@ jQuery(function($) {
                     'height': '0',
                     'padding-bottom': 100 / img.width() * img.height() + '%'
                 });
+                
             });
         });
+
         var postlist = $('.post-list').masonry({
             itemSelector: '.post',
             isAnimated: false,
@@ -99,6 +102,8 @@ jQuery(function($) {
         }).imagesLoaded().always(function() {
             postlist.masonry('layout');
         });
+
+        
     }
     grid();
 
