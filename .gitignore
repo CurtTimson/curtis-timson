@@ -1,3 +1,4 @@
 node_modules
 .publish
 public
+bower_components
