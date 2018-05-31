@@ -10,7 +10,7 @@ jQuery(function($) {
     body.on('click', '[data-action="menu"], [data-action="toc"]', function() {
         var action = $(this).data('action');
         var target = $('[data-target="' + $(this).data('target') + '"]').not('[data-action]');
-        menu(target)
+        menu(target);
     });
 
     var menuActive = false;

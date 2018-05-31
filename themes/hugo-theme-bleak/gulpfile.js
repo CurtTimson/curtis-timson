@@ -8,3 +8,7 @@ gulp.task('compile-script', () => (
         .pipe(uglify())
         .pipe(gulp.dest('static/js'))
 ));
+
+gulp.task('dev', () => {
+    gulp.watch('src/js/script.js', ['compile-script']);
+})
