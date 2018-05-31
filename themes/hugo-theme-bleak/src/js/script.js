@@ -82,26 +82,47 @@ jQuery(function($) {
 
     function grid() {
 
+        console.log('image count', $('.post-list .post .post-image img').length);
+
+        var imgCount = $('.post-list .post .post-image img').length;
+        var loaded = 0;
+
         $('.post-list .post .post-image img').each(function() {
             var img = $(this);
+
+            var tmpImg = new Image();
+            tmpImg.src = $(this).attr('src');
+            tmpImg.onload = function(){
+                loaded++;
+            };
+        
             img.load(function() {
                 img.parents('.post-image').css({
                     'height': '0',
                     'padding-bottom': 100 / img.width() * img.height() + '%'
                 });
-                
             });
         });
 
-        var postlist = $('.post-list').masonry({
-            itemSelector: '.post',
-            isAnimated: false,
-            gutter: 0,
-            columnWidth: 1,
-            transitionDuration: 0
-        }).imagesLoaded().always(function() {
-            postlist.masonry('layout');
-        });
+        var pli = window.setInterval(function(){
+            console.log(loaded);
+            if (imgCount <= loaded){
+                window.clearInterval(pli);
+                setMasonary();
+            }
+        }, 100);
+
+        var setMasonary = function(){
+            var postlist = $('.post-list').masonry({
+                itemSelector: '.post',
+                isAnimated: false,
+                gutter: 0,
+                columnWidth: 1,
+                transitionDuration: 0
+            }).imagesLoaded().always(function() {
+                postlist.masonry('layout');
+            });
+        }
 
         
     }
