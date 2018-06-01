@@ -12,7 +12,8 @@ draft = false
 menu = ""
 comments = true
 aliases = [
-    "/js/reading-url-hashtag-values/"
+    "/js/reading-url-hashtag-values/",
+    "/javascript-2/reading-url-hashtag-values/"
 ]
 
 +++
