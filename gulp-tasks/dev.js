@@ -1,5 +1,4 @@
 var gulp = require("gulp");
-
 var less = require("gulp-less");
 
 var lessPath = 'static/less/*.less';

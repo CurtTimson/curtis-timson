@@ -1167,6 +1167,7 @@ body {
 
 .post-list {
 	position: relative;
+	height:1000px; //will be overridden by js
 
 	.post {
 		float: left;
