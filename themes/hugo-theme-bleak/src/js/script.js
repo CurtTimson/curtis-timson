@@ -82,8 +82,6 @@ jQuery(function($) {
 
     function grid() {
 
-        console.log('image count', $('.post-list .post .post-image img').length);
-
         var imgCount = $('.post-list .post .post-image img').length;
         var loaded = 0;
 
@@ -105,7 +103,6 @@ jQuery(function($) {
         });
 
         var pli = window.setInterval(function(){
-            console.log(loaded);
             if (imgCount <= loaded){
                 window.clearInterval(pli);
                 setMasonary();
