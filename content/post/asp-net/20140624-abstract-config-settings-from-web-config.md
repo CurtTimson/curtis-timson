@@ -11,7 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
-id = 4
+postid = 4
 aliases = [
     "/asp-net/abstract-config-settings-from-web-config/"
 ]

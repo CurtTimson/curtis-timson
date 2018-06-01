@@ -11,7 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
-id = 10
+postid = 10
 aliases = [
     "/front-end-dev/what-is-cache-busting/"
 ]

@@ -11,7 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
-id = 6
+postid = 6
 aliases = [
     "/c-sharp/strongly-typed-stored-procedure-names-in-c-sharp/"
 ]

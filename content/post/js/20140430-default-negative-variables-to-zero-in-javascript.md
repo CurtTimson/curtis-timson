@@ -11,7 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
-id = 20
+postid = 20
 aliases = [
     "/js/default-negative-variables-to-zero-in-javascript/"
 ]

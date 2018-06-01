@@ -11,7 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
-id = 13
+postid = 13
 aliases = [
     "/jquery/using-jquery-callback-functions/"
 ]

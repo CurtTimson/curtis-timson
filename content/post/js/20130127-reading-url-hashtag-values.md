@@ -11,7 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
-id = 18
+postid = 18
 aliases = [
     "/js/reading-url-hashtag-values/",
     "/javascript-2/reading-url-hashtag-values/"
