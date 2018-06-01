@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+id = 25
 aliases = [
     "/js/default-parameters-es6/"
 ]

@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+id = 21
 aliases = [
     "/js/create-a-flashing-tab-notification-page-title/"
 ]

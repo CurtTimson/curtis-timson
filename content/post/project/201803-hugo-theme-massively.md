@@ -9,6 +9,7 @@ slug = "massively-hugo-theme"
 author = "Curtis Timson"
 comments = true
 image = "images/post/hugo-massively-tn.png"
+id = 29
 +++
 ![Hugo Massively Theme](/images/post/hugo-massively.png)
 

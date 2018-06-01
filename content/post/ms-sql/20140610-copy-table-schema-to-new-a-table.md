@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+id = 27
 aliases = [
     "/ms-sql/copy-table-schema-to-new-a-table/"
 ]

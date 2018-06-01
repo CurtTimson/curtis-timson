@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+id = 24
 aliases = [
     "/js/preventing-console-log-issues-in-ie/"
 ]

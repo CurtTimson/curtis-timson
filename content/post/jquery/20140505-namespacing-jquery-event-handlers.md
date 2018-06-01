@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+id = 16
 aliases = [
     "/jquery/namespacing-jquery-event-handlers/"
 ]

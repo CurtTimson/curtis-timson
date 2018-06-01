@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+id = 9
 +++
 There may be times in which you need to style inputs which have been set with a readonly state.
 

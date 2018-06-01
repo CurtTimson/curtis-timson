@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+id = 7
 +++
 
 For the past few years I've been using [Wordpress](http://www.wordpress.com) to power this blog site and have recently switched to using [Hugo](https://gohugo.io/), a static site generator. Now I'd like to share my reasons for doing this, and how you can too.

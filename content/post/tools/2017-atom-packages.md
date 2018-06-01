@@ -10,6 +10,7 @@ author = "Curtis Timson"
 menu = ""
 comments = true
 image = "images/post/atom/atom-editor-logo.jpg"
+id = 31
 +++
 
 If you're unfamiliar with Atom, it's an open source IDE developed by [GitHub](http://github.com) which I currently use for front-end development.
