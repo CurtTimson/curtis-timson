@@ -10,7 +10,7 @@ slug = "angularjs-jest-unit-testing"
 author = "Curtis Timson"
 menu = ""
 comments = true
-id = 3
+postid = 3
 +++
 
 ![AngularJs with Jest](/images/post/jest/angular-jest.png)
