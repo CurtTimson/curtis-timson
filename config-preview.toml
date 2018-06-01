@@ -8,10 +8,10 @@ Paginate = 20
 
 [params]
   # Warning Keys are case sensitives
-  Subtitle = "front-end developer"
+  Subtitle = "software developer"
   cover = "images/cover.jpg"
   # Google analytics
-  googleAnalyticsUserID = "UA-50505111-1"
+  googleAnalyticsUserID = "UA-50505111-2"
   disqus = "curtis-timson"
 
   [params.author]
