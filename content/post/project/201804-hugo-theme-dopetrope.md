@@ -9,6 +9,7 @@ slug = "dopetrope-hugo-theme"
 author = "Curtis Timson"
 comments = true
 image = "images/post/hugo-dopetrope-tn.png"
+postid = 30
 +++
 ![Hugo Dopetrope Theme](/images/post/hugo-dopetrope.png)
 

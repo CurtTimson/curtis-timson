@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+postid = 2
 aliases = [
     "/angularjs/filtering-arrays-in-angularjs/"
 ]

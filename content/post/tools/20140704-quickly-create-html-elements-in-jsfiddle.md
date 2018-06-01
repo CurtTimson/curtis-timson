@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+postid = 32
 aliases = [
     "/tools/quickly-create-html-elements-in-jsfiddle/"
 ]

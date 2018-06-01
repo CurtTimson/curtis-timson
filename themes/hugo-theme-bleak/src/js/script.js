@@ -329,6 +329,7 @@ jQuery(function($) {
     });
 
     $('body').on('click', '.js-ajax-link', function(e) {
+        return;
         e.preventDefault();
 
         var link = $(this);

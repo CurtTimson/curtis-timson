@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+postid = 11
 aliases = [
     "/front-end-dev/8-tips-to-increase-front-end-website-performance/"
 ]

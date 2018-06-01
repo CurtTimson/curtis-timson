@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+postid = 1
 aliases = [
     "/angularjs/setting-up-a-simple-angularjs-app-to-display-an-array/"
 ]

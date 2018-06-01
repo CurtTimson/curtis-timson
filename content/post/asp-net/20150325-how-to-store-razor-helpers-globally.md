@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+postid = 5
 aliases = [
     "/asp-net/how-to-store-razor-helpers-globally/"
 ]

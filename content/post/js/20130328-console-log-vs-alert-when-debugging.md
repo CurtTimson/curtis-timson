@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+postid = 19
 aliases = [
     "/js/console-log-vs-alert-when-debugging/"
 ]

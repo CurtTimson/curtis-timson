@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+postid = 8
 aliases = [
     "/css/managing-font-face-definitions-with-less/",
     "/less/managing-font-face-definitions-with-less/"

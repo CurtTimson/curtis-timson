@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+postid = 15
 aliases = [
     "/jquery/understanding-jquery-data-storage/"
 ]

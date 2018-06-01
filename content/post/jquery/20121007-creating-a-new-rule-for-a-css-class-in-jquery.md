@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+postid = 14
 aliases = [
     "/jquery/creating-a-new-rule-for-a-css-class-in-jquery/"
 ]

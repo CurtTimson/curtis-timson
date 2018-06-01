@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+postid = 26
 aliases = [
     "/less/using-font-face-and-preventing-faux-styles/",
     "/css/using-font-face-and-preventing-faux-styles/"

@@ -11,6 +11,7 @@ author = "Curtis Timson"
 draft = false
 menu = ""
 comments = true
+postid = 22
 aliases = [
     "/js/mixing-revealing-module-and-singleton-javascript-patterns/"
 ]

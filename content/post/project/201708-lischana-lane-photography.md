@@ -8,6 +8,7 @@ title = "Lischana Lane Photography Portfolio"
 slug = "lischana-lane-photography"
 author = "Curtis Timson"
 comments = true
+postid = 28
 image = "/images/post/lischana-lane/lischana-lane-portfolio.png"
 +++
 

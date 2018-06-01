@@ -10,6 +10,7 @@ slug = "hugo-netlify"
 author = "Curtis Timson"
 menu = ""
 comments = true
+postid = 12
 +++
 Recently I've started migrating my static websites hosting from [GitHub Pages](https://pages.github.com/) to [Netlify](https://www.netlify.com/).
 
