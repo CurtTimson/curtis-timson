@@ -30,7 +30,8 @@
 
         <title>{{ if not .IsHome }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}{{ if .IsHome }} &middot; {{ .Site.Params.Subtitle }}{{ end }}</title>
 
-        <link rel="preload" href="{{ .Site.BaseURL }}js/main.js" as="script" />
+        <link rel="preload" href="{{ .Site.BaseURL }}js/ct-vendor.js" as="script" />
+        <link rel="preload" href="{{ .Site.BaseURL }}js/ct-main.js" as="script" />
         <link rel="preload" href="{{ .Site.BaseURL }}css/main.css" as="style" />
         <link rel="preload" href="{{ .Site.BaseURL }}css/ct-main.css" as="style" />
 
