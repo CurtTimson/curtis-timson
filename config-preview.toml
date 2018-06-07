@@ -1,7 +1,7 @@
 languageCode = "en-us"
 title = "Curtis Timson"
 theme = "hugo-theme-bleak-ct"
-baseurl = "https://deploy-preview-34--curtistimson.netlify.com/"
+baseurl = "https://deploy-preview-36--curtistimson.netlify.com/"
 Paginate = 20
 
 
