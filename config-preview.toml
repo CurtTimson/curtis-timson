@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "Curtis Timson"
-theme = "hugo-theme-bleak"
+theme = "hugo-theme-bleak-ct"
 baseurl = "https://deploy-preview-33--curtistimson.netlify.com/"
 Paginate = 20
 
