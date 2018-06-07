@@ -32,7 +32,7 @@
 
         <link rel="preload" href="{{ .Site.BaseURL }}js/main.js" as="script" />
         <link rel="preload" href="{{ .Site.BaseURL }}css/main.css" as="style" />
-        <link rel="preload" href="{{ .Site.BaseURL }}css/ct.css" as="style" />
+        <link rel="preload" href="{{ .Site.BaseURL }}css/ct-main.css" as="style" />
 
     {{ if .Description }}
         <meta name="description" content="{{ .Description }}" />
@@ -127,11 +127,9 @@
     {{ partial "criticalpath.html" . }}
 
 
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/ct.css" />
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/ct-main.css" />
 
     <link rel="shortcut icon" type="image/png" href="//0.gravatar.com/avatar/15a556c8b58e8aefa727088885925a12.png?s=16"/>
-
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}npm/lastfm-nowplaying.min.css" />
 
     </head>
     <body class="home-template">

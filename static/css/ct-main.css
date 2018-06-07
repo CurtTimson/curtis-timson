@@ -1,0 +1,57 @@
+.lastfm-nowplaying{padding:30px;overflow:hidden;position:relative;height:185px;box-sizing:border-box;font-family:Arial;font-size:1em}.lastfm-nowplaying canvas{position:absolute;left:0;top:0;z-index:0}.lastfm-nowplaying .artwork,.lastfm-nowplaying .text{z-index:1;position:relative}.lastfm-nowplaying .artwork{float:left;background-repeat:no-repeat;background-position:center;background-size:cover;width:125px;height:125px}.lastfm-nowplaying .text{padding-left:20px;white-space:nowrap;overflow:hidden}.lastfm-nowplaying .text h3,.lastfm-nowplaying .text p{text-overflow:ellipsis;overflow:hidden;color:#fff}.lastfm-nowplaying .text.black h3,.lastfm-nowplaying .text.black p{color:#000}.lastfm-nowplaying .text h3{margin:0 0 32px;font-weight:400}.lastfm-nowplaying .text p{margin:16px 0}.lastfm-nowplaying .text .track{font-weight:700;font-size:1.2em}@media only screen and (max-width:375px){.lastfm-nowplaying{font-size:.8em;padding:20px;height:140px}.lastfm-nowplaying .artwork{width:100px;height:100px}.lastfm-nowplaying .text{padding-left:18px}.lastfm-nowplaying .text p{margin:8px 0}}
+article.post pre{
+  background:#fff;
+}
+
+.lastfm-content{
+  max-width: 1200px;
+  margin: 0 auto 4em;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+#wrapper#wrapper {
+  padding-bottom: 0;
+}
+#footer#footer {
+  background-color: #262626;
+  padding-top: 10px;
+  position: static;
+}
+#footer#footer .copy {
+  max-width: 1200px;
+  margin: 0 auto 4em;
+  padding: .5em;
+  z-index: 10;
+}
+#footer#footer .copy .col {
+  width: 33%;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 2em;
+}
+@media only screen and (max-width: 420px) {
+  #footer#footer .copy .col {
+    width: auto;
+    float: none;
+  }
+}
+#footer#footer .copy .col h2 {
+  color: #fff;
+}
+#footer#footer .copy .col ul {
+  padding: 0;
+}
+#footer#footer .copy .col ul li {
+  margin: 1em 0;
+}
+#footer#footer .copy .col .stackexchange img {
+  margin: 2em 0;
+}
+#footer#footer .credits {
+  clear: both;
+  background-color: #1d1d1d;
+}
+
+.bleak-github-button iframe {
+  margin:0;
+}
