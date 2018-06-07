@@ -1,6 +1,7 @@
 let gulp = require("gulp");
 let less = require("gulp-less");
 let concat = require('gulp-concat');
+let cleanCSS = require('gulp-clean-css');
 
 let lessPath = 'static/less/*.less';
 
@@ -30,6 +31,7 @@ gulp.task('compile-ct-main-css', () => {
     './node_modules/lastfm-nowplaying/dist/lastfm-nowplaying.min.css',
     './static/css/ct.css'
   ])
+  .pipe(cleanCSS())
   .pipe(concat('ct-main.css'))
   .pipe(gulp.dest('./static/css'));
 });
