@@ -2,6 +2,7 @@ let gulp = require("gulp");
 let less = require("gulp-less");
 let concat = require('gulp-concat');
 let cleanCSS = require('gulp-clean-css');
+let uglify = require('gulp-uglify');
 
 let lessPath = 'static/less/*.less';
 
@@ -44,6 +45,7 @@ gulp.task('compile-ct-vendor-js', () => {
     './node_modules/angular/angular.min.js',
     './node_modules/lastfm-nowplaying/dist/lastfm-nowplaying.min.js'
   ])
+  .pipe(uglify())
   .pipe(concat('ct-vendor.js'))
   .pipe(gulp.dest('./static/js'));
 });
@@ -52,15 +54,7 @@ gulp.task('compile-ct-main-js', () => {
   return gulp.src([
     './src/js/ct.js'
   ])
+  .pipe(uglify())
   .pipe(concat('ct-main.js'))
   .pipe(gulp.dest('./static/js'));
 });
-
-// 'bower_components/jquery/dist/jquery.min.js',
-// 'bower_components/history.js/scripts/bundled/html4+html5/jquery.history.js',
-// 'bower_components/imagesloaded/imagesloaded.pkgd.min.js',
-// 'bower_components/masonry/dist/masonry.pkgd.min.js',
-// 'bower_components/fitvids/jquery.fitvids.js',
-// //'bower_components/highlightjs/highlight.pack.min.js',
-// 'bower_components/nprogress/nprogress.js',
-// 'src/js/vendor/gist-embed.min.js'
