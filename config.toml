@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "Curtis Timson"
-theme = "hugo-theme-bleak"
+theme = "hugo-theme-bleak-ct"
 baseurl = "https://curtistimson.co.uk/"
 Paginate = 20
 
