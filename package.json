@@ -23,9 +23,15 @@
     "gulp-concat": "^2.6.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-less": "^3.3.0",
+    "gulp-uglify": "^3.0.0",
     "require-dir": "^0.3.1"
   },
   "dependencies": {
-    "lastfm-nowplaying": "^1.5.0"
+    "highlightjs": "^9.10.0",
+    "history.js": "^1.8.0",
+    "imagesloaded": "^4.1.1",
+    "jquery": "^2.2.4",
+    "lastfm-nowplaying": "^1.5.0",
+    "nprogress": "^0.2.0"
   }
 }
