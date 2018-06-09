@@ -1,6 +1,6 @@
 +++
 tags = ["angularjs", "jest", "unit-testing", "javascript", "code-coverage", "npm"]
-featured = false
+featured = true
 description = "Step-by-step guide on setting up AngularJs with Jest unit testing"
 date = "2017-11-17T18:00:00"
 share = true
