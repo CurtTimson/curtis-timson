@@ -22,6 +22,7 @@ gulp.task('dev', ['less-watch']);
 
   gulp.task('compile-ct-main-css', () => {
     return gulp.src([
+      './node_modules/prismjs/themes/prism-okaidia.css',
       './node_modules/lastfm-nowplaying/dist/lastfm-nowplaying.min.css',
       './static/css/ct.css'
     ])
@@ -40,6 +41,7 @@ gulp.task('compile-ct-vendor-js', () => {
     './node_modules/masonry/dist/masonry.pkgd.min.js',
     './node_modules/fitvids/jquery.fitvids.js',
     './node_modules/highlightjs/highlight.pack.min.js',
+    './node_modules/prismjs/prism.js',
     './node_modules/nprogress/nprogress.js',
     './src/js/vendor/gist-embed.min.js',
     './node_modules/angular/angular.min.js',

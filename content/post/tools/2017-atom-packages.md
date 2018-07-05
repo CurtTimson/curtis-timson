@@ -26,7 +26,7 @@ To install through Atom go to **Settings → Install** and search for the packag
 
 Alternatively installing via a CLI is much quicker and requires only the following command:
 
-```
+```bash
 apm install <package name>
 ```
 
@@ -107,13 +107,13 @@ The Emmet package is a plugin for the original [emmit toolkit](https://emmet.io/
 
 Here's a simple example:
 
-```
+```html
 html>head+body>div.container
 ```
 
 Pressing tab this would then become:
 
-```
+```html
 <html>
 <head></head>
 <body>
@@ -124,13 +124,13 @@ Pressing tab this would then become:
 
 However emmet also has the ability for more complex syntax, such as loops. For example:
 
-```
+```html
 html>head+body>div.container>p.item$*2>a[href='item$']{Link $}
 ```
 
 Becomes:
 
-```
+```html
 <html>
 <head></head>
 <body>

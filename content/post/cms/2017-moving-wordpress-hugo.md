@@ -96,7 +96,7 @@ For example this blog site is built on the [Bleak](https://themes.gohugo.io/blea
 
 Themes will be stored in the following folder structure:
 
-```
+```markup
 |--themes
    |--theme-name
       |--layouts
@@ -108,7 +108,7 @@ If for example you wished to modify the content of the `index.html` you can simp
 
 However any file which exists in the root `layouts` folder will overwrite the theme. Therefore you can place your customised version in the following folder structure:
 
-```
+```markup
 |--layouts
    |--index.html //custom file
 |--themes
@@ -137,7 +137,7 @@ https://wordpress.org/plugins/disqus-comment-system/
 ### URL Aliasing
 When migrating from Wordpress I found that I required slightly different URLs for my blog posts. So that I wouldn't lose the link equity from existing sources I added aliases to the front-matter in the Hugo posts. This can be done like so:
 
-```
+```js
 +++
 title = "Check javascript function exists before calling it"
 aliases = [

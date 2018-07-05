@@ -1,6 +1,6 @@
 {
   "name": "curtis-timson",
-  "version": "1.16.2",
+  "version": "1.17.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -32,6 +32,7 @@
     "imagesloaded": "^4.1.1",
     "jquery": "^2.2.4",
     "lastfm-nowplaying": "^1.5.0",
-    "nprogress": "^0.2.0"
+    "nprogress": "^0.2.0",
+    "prismjs": "^1.15.0"
   }
 }
