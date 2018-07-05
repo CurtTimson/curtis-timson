@@ -23,28 +23,32 @@ This works well as my functions are namespaced and therefore the risk of clashin
 
 For this example I've created a singleton pattern javascript object which will show an alert window displaying "hello world".
 
-    var MyFunction = {
-       Init: function(){
-          this.Config.foo = "hello world";
-       },
-       Config:{
-          foo:null
-       },
-       ShowAlert:function(){
-          alert(this.Config.foo);
-       }
+```js
+var MyFunction = {
+    Init: function(){
+        this.Config.foo = "hello world";
+    },
+    Config:{
+        foo:null
+    },
+    ShowAlert:function(){
+        alert(this.Config.foo);
     }
+}
 
-    MyFunction.Init();
-    MyFunction.ShowAlert();
+MyFunction.Init();
+MyFunction.ShowAlert();
+```
 
 [View Demo][1]
 
 With this object it's possible for me to change the value of `foo` so that the alert displays a different message.
 
-    MyFunction.Init();
-    MyFunction.Config.foo = "lorem ipsum";
-    MyFunction.ShowAlert();
+```js
+MyFunction.Init();
+MyFunction.Config.foo = "lorem ipsum";
+MyFunction.ShowAlert();
+```
 
 [View Demo][2]
 
