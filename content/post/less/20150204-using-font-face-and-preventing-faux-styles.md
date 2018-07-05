@@ -25,40 +25,44 @@ These are often defined with seperate `font-family` names for each type-face.
 
 For example the "<a href="http://www.fontsquirrel.com/fonts/alegreya">Alegreya</a>" font could be defined as:
 
-    @font-face{
-        font-family:'alegreya';
-        src: url('Fonts/Alegreya-Regular.otf');
-    	font-weight: normal;
-    	font-style: normal;
-    }
+```css
+@font-face{
+    font-family:'alegreya';
+    src: url('Fonts/Alegreya-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
 
-    @font-face{
-        font-family:'alegreya-bold';
-        src: url('Fonts/Alegreya-Bold.otf');
-    	font-weight: normal;
-    	font-style: normal;
-    }
+@font-face{
+    font-family:'alegreya-bold';
+    src: url('Fonts/Alegreya-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
 
-    @font-face{
-        font-family:'alegreya-italic';
-        src: url('Fonts/Alegreya-Italic.otf');
-    	font-weight: normal;
-    	font-style: normal;
-    }
+@font-face{
+    font-family:'alegreya-italic';
+    src: url('Fonts/Alegreya-Italic.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+```
 
 This would then be applied in areas of CSS as such:
 
-    div{
-        font-family:'alegreya';
-    }
+```css
+div{
+    font-family:'alegreya';
+}
 
-    div{
-        font-family:'alegreya-bold';
-    }
+div{
+    font-family:'alegreya-bold';
+}
 
-    div{
-        font-family:'alegreya-italic';
-    }
+div{
+    font-family:'alegreya-italic';
+}
+```
 
 The issue here is that unless another developer is aware, applying `font-weight:bold;` to the "alegreya" `font-family` will result in the browser applying it's own faux-bold styling rather than using the custom "Alegreya-Bold.otf" type-face. Likewise with italic styling.
 
@@ -76,39 +80,43 @@ The best way to avoid this is to <strong>use the same font-family name for each 
 
 For example:
 
-    @font-face{
-        font-family:'alegreya';
-        src: url('Fonts/Alegreya-Regular.otf');
-    	font-weight: normal;
-    	font-style: normal;
-    }
+```css
+@font-face{
+    font-family:'alegreya';
+    src: url('Fonts/Alegreya-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
 
-    @font-face{
-        font-family:'alegreya';
-        src: url('Fonts/Alegreya-Bold.otf');
-    	font-weight: bold;
-    	font-style: normal;
-    }
+@font-face{
+    font-family:'alegreya';
+    src: url('Fonts/Alegreya-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
 
-    @font-face{
-        font-family:'alegreya';
-        src: url('Fonts/Alegreya-Italic.otf');
-    	font-weight: normal;
-    	font-style: italic;
-    }
+@font-face{
+    font-family:'alegreya';
+    src: url('Fonts/Alegreya-Italic.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+```
 
 This can then be used by keeping the same `font-family` but adjusting the weight/style applied:
 
-    div{
-        font-family:'alegreya';
-    }
+```css
+div{
+    font-family:'alegreya';
+}
 
-    div{
-        font-family:'alegreya';
-        font-weight:bold;
-    }
+div{
+    font-family:'alegreya';
+    font-weight:bold;
+}
 
-    div{
-        font-family:'alegreya';
-        font-style:italic;
-    }
+div{
+    font-family:'alegreya';
+    font-style:italic;
+}
+```

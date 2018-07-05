@@ -22,10 +22,10 @@ I’ve heard questions in the past regarding how to run a script after a jQuery 
 
 The majority of these believe that you need to delay the script for a few seconds, allowing the animation to complete before the 2nd function is called. For example:
 
-~~~~
-$foo.load("MyWebPage.htm");
+```js
+$foo.load("MyWebPage.html");
 $foo.delay(1000).css("color", "red");
-~~~~
+```
 
 Here, the jQuery object $foo is being loaded with a web page’s content, then while this is happening a delay of 1000 milliseconds is set, before the css colour is changed to red.
 
@@ -37,10 +37,10 @@ Fortunately, a lot of jQuery methods also provide a callback function. This allo
 
 The script below will run the load function on $foo, and once this has finished executing, the css function will then be executed.
 
-~~~~
+```js
 $foo.load("MyWebPage.html", function(){
     $(this).css("color", "red");
 });
-~~~~
+```
 
 This means you don’t need to guess how long the first function will take to complete, and also ensures that the 2nd function is consistently ran precisely after the 1st has completed.

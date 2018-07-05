@@ -25,24 +25,30 @@ I've written a small javascript object which can be used to switch on and off pa
 
 To activate the page title notification call the following:
 
-    pageTitleNotification.on("New Message!");
+```js
+pageTitleNotification.on("New Message!");
+```
 
 Then call the following to turn it off:
 
-    pageTitleNotification.off()
+```js
+pageTitleNotification.off()
+```
 
 The default speed is 1000 milliseconds, but this can be customised by passing a 2nd parameter to the `on()` function.
 
-    pageTitleNotification.on("New Message!", 5000);
-
+```js
+pageTitleNotification.on("New Message!", 5000);
+```
 
 ## Download
 
 There are various ways you can integrate this into your project:
 
 ### npm
+Run the following `npm install` command:
 
-```
+```js
 npm install flashing-page-title-notification --save
 ```
 

@@ -35,7 +35,7 @@ From then on, any calls to `.data()` or any setting of data values via `.data("k
 
 This can be proved by comparing the values of `.attr("data-key")` and `.data("key")` after a value has been set for `data("key")`:
 
-~~~~
+```js
 var $myDiv = $(".myDiv");
 
 //Display value before changing the data
@@ -49,7 +49,7 @@ alert($myDiv.data("foo")) //Displays "baz"
 
 //Display the value of the elements "data-foo" attribute
 alert($myDiv.attr("data-foo")); //Displays "bar"
-~~~~
+```
 
 [Click here to see a jsFiddle example][2]
 
@@ -59,24 +59,24 @@ To find where this data is stored in the jQuery cache, we can use `$.expando` to
 
 For example if I have the following HTML markup:
 
-~~~~
+```html
 <div class="myDiv" data-foo="bar"></div>
-~~~~
+```
 
 Once `.data()` has been set on this element, we can access its jQuery cache index by calling:
 
-~~~~
+```js
 $(".myDiv")[0][$.expando]
-~~~~
+```
 
 This will return an integer value of the index position in the jQuery cache. Therefore we can use the following to output the data in the console:
 
-~~~~
+```js
 var $myDiv = $(".myDiv");
 $myDiv.data("foo", "baz");
 var cacheIndex = $myDiv[0][$.expando];
 console.log($.cache[cacheIndex]);
-~~~~
+```
 
 This then outputs:
 
