@@ -28,10 +28,12 @@ Recently I've been working on front-end performance improvements for a large web
 
 In browser, images can be resized on-the-fly using CSS properties.
 
-    img {
-       width:200px;
-       height:200px;
-    }
+```css
+img {
+    width:200px;
+    height:200px;
+}
+```
 
 However doing this means that the larger image has to be downloaded to the users device before being resized. This will result in a larger file size than required. Therefore image resize should be done server-side. This can either be done physically by editing the file in photoshop, or if you intend to use the same image in different sizes across your website, an on-the-fly image resizer solution may be more appropriate.
 
@@ -51,13 +53,15 @@ Here is an example of one of Google's current sprite images:
 
 This can then be used in CSS such as:
 
-    .logo {
-       width:50px;
-       height:50px;
-       background-image:url('sprite.png');
-       background-repeat:no-repeat;
-       background-position: -100px -100px;
-    }
+```css
+.logo {
+    width:50px;
+    height:50px;
+    background-image:url('sprite.png');
+    background-repeat:no-repeat;
+    background-position: -100px -100px;
+}
+```
 
 There are several online CSS sprite generators available, such as <a href="http://css.spritegen.com/" target="_blank">SpriteGen</a> which can make creating sprites easier.
 
@@ -114,13 +118,15 @@ Small images, such as icons/logos etc, can be optimised by being included in the
 
 For example lets say you have the following site logo CSS:
 
-    .logo
-    {
-        width:100px;
-        height:40px;
-        background-image:url('https://placeholdit.imgix.net/~text?txt=logo&w=100&h=40');
-        display:block;
-    }
+```css
+.logo
+{
+    width:100px;
+    height:40px;
+    background-image:url('https://placeholdit.imgix.net/~text?txt=logo&w=100&h=40');
+    display:block;
+}
+```
 
 <a target="_blank" href="http://jsfiddle.net/xrn0m0fd/">http://jsfiddle.net/xrn0m0fd/</a>
 

@@ -33,14 +33,14 @@ This guide includes:
 
 To use Jest with AngularJs you will require the Angular Mocks and Jest CLI packages, which can be installed using npm:
 
-```
+```bash
 npm i angular-mocks --save-dev
 npm i jest-cli --save-dev
 ```
 
 In your `package.json` file the `test` script can then be set to `jest`:
 
-```
+```js
 "scripts": {
   "test": "jest"
 },
@@ -62,7 +62,7 @@ In this file we:
 
  - Require the files needed for the test. This includes the AngularJs framework, Angular Mocks and the actual service we're testing, `mathservice.js`.
 
-```
+```js
 require('../node_modules/angular/angular.min.js');
 require('../node_modules/angular-mocks/angular-mocks.js');
 require('./mathservice.js');
@@ -70,13 +70,13 @@ require('./mathservice.js');
 
  - Create a `describe` function which will group our tests together in the same block. In this instance the block is for testing the `addTwoNumbers` function specifically.
 
-```
+```js
 describe('Math service - addTwoNumbers', function(){
 ```
 
  - Mock the AngularJs module and inject the service. This will load the module and service so that we are able to reference the service to call the function.
 
-```
+```js
 beforeEach(
   angular.mock.module('mathmodule')
 );
@@ -90,7 +90,7 @@ beforeEach(inject((mathservice) => {
 
  - Set up several tests to ensure we receive the expected output from the function. Individual tests are set up by calling the `it` function. Each `it` function then calls the `addTwoNumbers` function and compares the actual result with the expected result by calling `expect`.
 
-```
+```js
 it('1 + 1 should equal 2', function(){
   var actual = _mathservice.addTwoNumbers(1,1);
   expect(actual).toEqual(2);
@@ -119,7 +119,7 @@ Jest also has the ability to show code coverage across the JS files within the a
 
 This can be shown by running `jest --coverage`:
 
-```
+```js
 "scripts": {
   "test": "jest --coverage"
 },
@@ -129,7 +129,7 @@ This can be shown by running `jest --coverage`:
 
 Now if we add an additional function to the Math Service without any tests then the code coverage report will show a reduced percentage and flag which lines of code are not being covered.
 
-```
+```js
 angular.module('mathmodule', [])
   .factory('mathservice', function(){
 

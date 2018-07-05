@@ -62,7 +62,7 @@ https://github.com/curttimson/lastfm-nowplaying
 
 It's also available as a node package:
 
-```
+```bash
 npm install --save lastfm-nowplaying
 ```
 

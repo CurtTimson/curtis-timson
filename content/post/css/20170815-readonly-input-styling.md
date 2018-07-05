@@ -17,7 +17,7 @@ There may be times in which you need to style inputs which have been set with a 
 
 In which case you can simply include the `readonly` attribute in your CSS selector to target this particular state:
 
-```
+```css
 input[readonly]
 {
     background-color:#ccc;

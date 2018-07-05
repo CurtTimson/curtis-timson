@@ -20,6 +20,7 @@ However, the majority of this tutorial **is not Hugo specific** and is in fact r
 
 ## Contents
 
+- [Contents](#contents)
 - [Why Netlify?](#why-netlify)
     - [Continuous Integration](#continuous-integration)
     - [Easy, free, SSL/HTTPS setup](#easy-free-sslhttps-setup)
@@ -36,7 +37,8 @@ However, the majority of this tutorial **is not Hugo specific** and is in fact r
     - [Setting Custom Domains](#setting-custom-domains)
     - [SSL/TLS certificate](#ssltls-certificate)
     - [Force HTTPS](#force-https)
-- [Continuous Integration / Delivery](#continuous-integration-delivery)
+- [Continuous Integration / Delivery](#continuous-integration--delivery)
+- [Related Links](#related-links)
 
 
 ## Why Netlify?
@@ -96,7 +98,7 @@ This should be the command you usually manually run to produce your production r
 
 For this Hugo project I use a separate config file for production so the command is:
 
-```
+```bash
 hugo --config config-prod.toml
 ```
 

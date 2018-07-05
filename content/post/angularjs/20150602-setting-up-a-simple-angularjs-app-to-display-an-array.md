@@ -22,63 +22,73 @@ The following is a simple tutorial on how to set up an AngularJS application to 
 
 First of all we'll start by creating our javascript array. The following is an array of user information containing details of Name, Gender and Location.
 
-    var userData= [
-        {
-            Name: "John Smith",
-            Gender: "M",
-            Location: "Wales"
-        },
-        {
-            Name: "Sally Smith",
-            Gender: "F",
-            Location: "USA"
-        },
-        {
-            Name: "Curtis Timson",
-            Gender: "M",
-            Location: "England"
-        },
-        {
-            Name: "Sam Wallace",
-            Gender: "M",
-            Location: "England"
-        },
-        {
-            Name: "Caroline James",
-            Gender: "F",
-            Location: "Scotland"
-        }
-    ];
+```js
+var userData = [
+    {
+        Name: "John Smith",
+        Gender: "M",
+        Location: "Wales"
+    },
+    {
+        Name: "Sally Smith",
+        Gender: "F",
+        Location: "USA"
+    },
+    {
+        Name: "Curtis Timson",
+        Gender: "M",
+        Location: "England"
+    },
+    {
+        Name: "Sam Wallace",
+        Gender: "M",
+        Location: "England"
+    },
+    {
+        Name: "Caroline James",
+        Gender: "F",
+        Location: "Scotland"
+    }
+];
+```
 
 Next we'll set up the HTML application container required:
 
-    <div ng-app="myApp"></div>
+```html
+<div ng-app="myApp"></div>
+```
 
 We can then initialise this as an Angular application by calling `angular.module()`. This will become the scope of our application. Therefore our `myApp` will not be able to influence HTML outside of this container.
 
-    var myApp = angular.module("myApp", []);
+```js
+var myApp = angular.module("myApp", []);
+```
 
 Now that the application has a variable, `myApp`, we can add a controller to it and create a new variable containing the user data:
 
-    myApp.controller("myController", function($scope){
-       $scope.users = userData;
-    });
+```js
+myApp.controller("myController", function($scope){
+    $scope.users = userData;
+});
+```
 
 Therefore `$scope.users` now references our original array of user data.
 
 Going back to our HTML, we can now back a reference to the controller:
 
-```
-   <div ng-app="myApp" ng-controller="myController"></div>
+```html
+<div ng-app="myApp" ng-controller="myController"></div>
 ```
 
 Within this `div` element we can now access the `users` variable. Therefore we can create an unordered list element, and by using `ng-repeat` create a loop of list items. AngularJS uses `{{ }}` to be able to access properties of the current object in the loop.
 
-    <div ng-app="myApp" ng-controller="myController">
-        <ul>
-            <li ng-repeat="user in users">{{user.Name}} | {{user.Location}}</li>
-        </ul>
-    </div>
+```html
+<div ng-app="myApp" ng-controller="myController">
+    <ul>
+        <li ng-repeat="user in users">{{user.Name}} | {{user.Location}}</li>
+    </ul>
+</div>
+```
 
 Here we are looping through all `user in users` to display multiple `li` elements and display the Name and Location of each user.
 

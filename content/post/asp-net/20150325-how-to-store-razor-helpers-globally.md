@@ -18,14 +18,16 @@ aliases = [
 +++
 ASP.NET MVC Razor helpers are a great way of reducing duplicated code by containing code snippets in a View which can then be called multiple times.
 
-    <div>
-        @DisplayGreeting("Curtis")
-    </div>
+```html
+<div>
+    @DisplayGreeting("Curtis")
+</div>
 
-    @helper DisplayGreeting(string name)
-    {
-        <span>Hello @name</span>
-    }
+@helper DisplayGreeting(string name)
+{
+    <span>Hello @name</span>
+}
+```
 
 However what if you wish to call this same helper on another View?
 
@@ -41,8 +43,10 @@ Move the helper code into this file:
 
 Then the helper can be called from the previous view by using `MyHelpers.DisplayGreeting`:
 
-    <div>
-        @MyHelpers.DisplayGreeting("Curtis")
-    </div>
+```html
+<div>
+    @MyHelpers.DisplayGreeting("Curtis")
+</div>
+```
 
 This way any View within the same ASP.NET MVC Application can then make use of this helper.
