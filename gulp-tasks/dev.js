@@ -22,7 +22,7 @@ gulp.task('dev', ['less-watch']);
 
   gulp.task('compile-ct-main-css', () => {
     return gulp.src([
-      './node_modules/prismjs/themes/prism-dark.css',
+      './node_modules/prismjs/themes/prism-okaidia.css',
       './node_modules/lastfm-nowplaying/dist/lastfm-nowplaying.min.css',
       './static/css/ct.css'
     ])
