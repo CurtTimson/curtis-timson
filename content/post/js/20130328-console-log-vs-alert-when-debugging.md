@@ -32,10 +32,12 @@ Another advantage of using `console.log()` over `alert()` is that you can captur
 
 For example if we have the following javascript variable:
 
-    var obj = {
-        foo: "bar",
-        baz: "qux"
-    };
+```js
+var obj = {
+    foo: "bar",
+    baz: "qux"
+};
+```
 
 If we call `alert(obj)` this will return `[object Object]`, which isn’t very helpful.
 

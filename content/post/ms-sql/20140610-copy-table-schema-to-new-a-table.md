@@ -23,7 +23,9 @@ However by adding a `WHERE` clause which will always return false, this will pre
 
 For example if we have a table, "TableA", the schema of this table can be copied into a new table, "TableB", by executing the following:
 
-    SELECT *
-    INTO TableB
-    FROM TableA
-    WHERE 1=0
+```sql
+SELECT *
+INTO TableB
+FROM TableA
+WHERE 1=0
+```

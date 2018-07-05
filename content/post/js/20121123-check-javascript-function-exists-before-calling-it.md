@@ -27,6 +27,8 @@ If we are to call this function, and it hasn't been included, a javascript error
 
 Therefore we need to first check that the functions exists in the current context. Using `typeof` we can determine whether the browser detects the function name as a function, and run it only if it exists:
 
-    if (typeof(foo) === 'function'){
-       foo();
-    }
+```js
+if (typeof(foo) === 'function'){
+    foo();
+}
+```
