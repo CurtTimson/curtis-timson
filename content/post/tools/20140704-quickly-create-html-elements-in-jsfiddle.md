@@ -25,36 +25,52 @@ One feature I've come across is the ability to quickly create elements in the HT
 
 For example if I write the following in the HTML window:
 
-    div#a.b
+```html
+div#a.b
+```
 
 And then hit tab, this will be converted to:
 
-    <div id="a" class="b"></div>
+```html
+<div id="a" class="b"></div>
+```
 
 Awesome!
 
 This can be taken a step further to include nested elements:
 
-    div#a.b>span.c
+```html
+div#a.b>span.c
+```
 
 Which will produce:
 
-    <div id="a" class="b"><span class="c"></span></div>
+```html
+<div id="a" class="b"><span class="c"></span></div>
+```
 
 Or we can create multiple nested elements:
 
-    div#a.b>span.c+span.d
+```html
+div#a.b>span.c+span.d
+```
 
 Which will produce:
 
-    <div id="a" class="b"><span class="c"></span><span class="d"></span></div>
+```html
+<div id="a" class="b"><span class="c"></span><span class="d"></span></div>
+```
 
 Finally we can also add other attributes in the same way we would select them in CSS:
 
-    a[href='http://curtistimson.co.uk']
+```html
+a[href='http://curtistimson.co.uk']
+```
 
 Which produces:
 
-    <a href="http://curtistimson.co.uk"></a>
+```html
+<a href="http://curtistimson.co.uk"></a>
+```
 
 <img src="../../../images/post/jsfiddle.gif" alt="jsfiddle" />

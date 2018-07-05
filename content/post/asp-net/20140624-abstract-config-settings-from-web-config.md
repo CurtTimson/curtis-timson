@@ -19,10 +19,12 @@ aliases = [
 
 In ASP.NET, application settings can be specified in the `web.config` file such as:
 
-    <appSettings>
-        <add key="PostsPerPage" value="6" />
-        <add key="CookieName" value="Foo" />
-    </appSettings>
+```xml
+<appSettings>
+    <add key="PostsPerPage" value="6" />
+    <add key="CookieName" value="Foo" />
+</appSettings>
+```
 
 The beauty of this is that you don't need to edit code to make changes to the application, and a single pre-compiled application can be used across multiple environments with different settings.
 
@@ -32,11 +34,15 @@ Therefore in these instances it's best to abstract the application settings away
 
 To do this a `configSource` attribute can be applied to the `appSettings` node of the `web.config` with a path to a seperate config file:
 
-    <appSettings configSource="Config\AppSettings.config" />
+```xml
+<appSettings configSource="Config\AppSettings.config" />
+```
 
 Then the `Config\AppSettings.config` can contain the `appSettings` node which would usually be in the `web.config`:
 
-    <appSettings>
-        <add key="PostsPerPage" value="6" />
-        <add key="CookieName" value="Foo" />
-    </appSettings>
+```xml
+<appSettings>
+    <add key="PostsPerPage" value="6" />
+    <add key="CookieName" value="Foo" />
+</appSettings>
+```
