@@ -1,6 +1,6 @@
 {
   "name": "curtis-timson",
-  "version": "1.17.1",
+  "version": "1.18.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,6 @@
     "require-dir": "^0.3.1"
   },
   "dependencies": {
-    "highlightjs": "^9.10.0",
     "history.js": "^1.8.0",
     "imagesloaded": "^4.1.1",
     "jquery": "^2.2.4",
