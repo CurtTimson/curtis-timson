@@ -13,4 +13,8 @@ menu = ""
 comments = true
 postid = 34
 +++
-Auth0 is a great AaaS (Authentication-as-a-Service) layer
+Auth0 is a fantastic AaaS (Authentication-as-a-Service) provider which abstracts the complications of storing and managing user credentials and authentication.
+
+However recently I struggled to obtain a list of user's email addresses from within my back-end NodeJs application.
+
+This tutorial will attempt to explain how exactly this can be achieved.
