@@ -13,8 +13,16 @@ menu = ""
 comments = true
 postid = 34
 +++
-Auth0 is a fantastic AaaS (Authentication-as-a-Service) provider which abstracts the complications of storing and managing user credentials and authentication.
+[Auth0](https://auth0.com/) is a fantastic AaaS (_Authentication-as-a-Service_) provider which abstracts the complications of storing and managing user credentials and authentication.
 
 However recently I struggled to obtain a list of user's email addresses from within my back-end NodeJs application.
 
 This tutorial will attempt to explain how exactly this can be achieved.
+
+## Overview
+
+For security purposes an Access Token but first be obtained before calling the user details. Once obtained the user details can then be retrieved by forming an HTTP request per user.
+
+The example below shows how a NodeJs application calls an MongoDB database in order to retrieve Auth0 User IDs before making several calls to Auth0.
+
+![](/images/post/auth0-nodejs-flow.png)
