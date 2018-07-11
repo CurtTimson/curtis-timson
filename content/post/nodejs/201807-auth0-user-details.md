@@ -15,25 +15,30 @@ postid = 34
 +++
 [Auth0](https://auth0.com/) is a fantastic AaaS (_Authentication-as-a-Service_) provider which abstracts the complications of storing and managing user credentials and authentication.
 
-However recently I struggled to obtain a list of user's email addresses from within my back-end NodeJs application.
+However recently I struggled to obtain a list of user's email addresses from Auth0 within my back-end NodeJs application.
 
 This tutorial will attempt to explain how exactly this can be achieved.
 
 ## Overview
 
-For security purposes an Access Token but first be obtained before calling the user details. Once obtained the user details can then be retrieved by forming an HTTP request per user.
+For security purposes an Access Token must first be obtained before requesting the user details. Once obtained the user details can then be retrieved by forming an HTTP request per user.
 
 The example below shows how a NodeJs application calls an MongoDB database in order to retrieve Auth0 User IDs before making several calls to Auth0.
 
 ![](/images/post/auth0-nodejs-flow.png)
 
+ - Browser calls NodeJs application to obtain users
+ - NodeJs calls MongoDB in order to return a list of specific User IDs
+ - NodeJs calls Auth0 to obtain Access Token
+ - NodeJs calls User API multiple times with Access Token to obtain user details
+
 ### Get Auth0 Access Token
 
-Before we can obtain any user details we first require an access token.
+Before we can obtain any user details we first aquire an [Access Token](https://auth0.com/docs/tokens/access-token).
 
-The Access Token is in the form of JWT and can be obtained in NodeJs by using the `auth0` [npm package](https://www.npmjs.com/package/auth0) with [AuthenticationClient](https://github.com/auth0/node-auth0#authentication-api-client).
+The Access Token is in the form of [JWT](https://jwt.io/) and can be obtained in NodeJs by using the `auth0` [npm package](https://www.npmjs.com/package/auth0) with [AuthenticationClient](https://github.com/auth0/node-auth0#authentication-api-client).
 
-Here is a step I add on my NodeJs Express RESTful requests which require an Auth0 Access Token:
+The following method can be added to a NodeJs Express RESTful request which requires an Auth0 Access Token:
 
 ```js
 let getAccessToken = (req, res, next) => {
@@ -64,7 +69,7 @@ let getAccessToken = (req, res, next) => {
 }
 ```
 
-Here the application will then require:
+`getAccessToken` requires the following properties from your Auth0 account. For security purposes these should never be stored in your source code and instead used as [environment variables](https://medium.com/ibm-watson-data-lab/environment-variables-or-keeping-your-secrets-secret-in-a-node-js-app-99019dfff716).
 
  - `auth0Domain`
  - `auth0ClientId`
@@ -83,7 +88,7 @@ api.get('/users', getAccessToken, (req, res) => {
 
 Now we have an Access Token we can look at making requests for user details.
 
-For each user a seperate request must be made. Therefore when requesting multiple users we must make a promise chain to wait until all the details have been retrieved.
+For each user a separate request must be made. Therefore when requesting multiple users we must make a promise chain to wait until all the data has been retrieved.
 
 #### Auth0 User API
 
