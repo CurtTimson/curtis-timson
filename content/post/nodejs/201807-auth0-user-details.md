@@ -4,7 +4,7 @@ featured = false
 description = "How to retrieve Auth0 users details and email addresses with NodeJs Express"
 date = "2018-07-06T00:00:00"
 share = true
-image = "images/post/auth0-nodejs-flow.png"
+image = "images/post/auth0-nodejs-user-details.png"
 title = "Access user details and email address from Auth0 with NodeJs"
 slug = "auth0-access-user-details-email-nodejs"
 author = "Curtis Timson"
@@ -163,4 +163,4 @@ api.get('/users', getAccessToken, (req, res) => {
 });
 ```
 
-Hopefully this has helped explain to you how to obtain user details from Auth0. If you have any questions please feel free to comment below!
+Hopefully this has helped explain how to obtain user details from Auth0. If you have any questions please feel free to comment below!
