@@ -2,7 +2,7 @@
 tags = ["auth0", "nodejs", "expressjs", "promise-chain"]
 featured = false
 description = "How to retrieve Auth0 users details and email addresses with NodeJs Express"
-date = "2018-07-06T00:00:00"
+date = "2018-07-12T19:15:00"
 share = true
 image = "images/post/auth0-nodejs-user-details.png"
 title = "Access user details and email address from Auth0 with NodeJs"
