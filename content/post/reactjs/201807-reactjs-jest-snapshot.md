@@ -22,5 +22,88 @@ Snapshots are a feature of Jest which will record an expected output state of a 
 
 ## Snapshot ReactJs Components
 
-Take for an example the following ReactJs `List.js` Component:
+Take for an example the following ReactJs `List.js` Component which will display `ul` list of items inputted.
 
+```js
+import React, { Component } from 'react';
+
+export default class List extends Component {
+    render() {
+
+        const listItems = this.props.items ? this.props.items.map((item, index) => (
+            <li key={index}>{item}</li>
+        )) : [];
+
+        return (
+            <ul>
+                {listItems}
+            </ul>
+        )
+    }
+}
+```
+
+We can write a some snapshot tests to record the expected outcome of this component when various properties are sent.
+
+The below `List.test.js` file is recording a snapshot of how the `List` component will render when `items` are set or not set.
+
+```js
+import React from 'react';
+import renderer from 'react-test-renderer';
+import List from './List';
+
+describe('List', () => {
+
+  it('matches snapshot when empty list', () => {
+    const tree = renderer
+      .create(<List/>);
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('matches snapshot when items passed in', () => {
+    const items = ['abc', 'def', 'ghi'];
+    const tree = renderer
+      .create(<List items={items}/>);
+    expect(tree).toMatchSnapshot();
+  });
+
+});
+```
+
+We can then run the following command:
+
+```bash
+npm run test
+```
+
+As there are currently no existing snapshots for `List`, Jest will go ahead and create these initial snapshots automatically and provide the following output:
+
+![](/images/post/reactjs-snapshot-terminal.png)
+
+The snapshot will have automatically have been stored in a new folder called `__snapshots__` in the same folder as the component and test file as `List.test.js.snap`.
+
+```js
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List matches snapshot when empty list 1`] = `<ul />`;
+
+exports[`List matches snapshot when items passed in 1`] = `
+<ul>
+  <li>
+    abc
+  </li>
+  <li>
+    def
+  </li>
+  <li>
+    ghi
+  </li>
+</ul>
+`;
+```
+
+Now that the snapshot has been created, the next time the tests are ran the existing snapshot will be compared to the tests.
+
+For example if we change the `ul` to an `ol` we'll receive the following test error response:
+
+![](/images/post/reactjs-snapshot-terminal-error.png)
