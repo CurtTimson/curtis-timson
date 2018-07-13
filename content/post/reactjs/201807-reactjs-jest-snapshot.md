@@ -152,3 +152,122 @@ export default class App extends Component {
   }
 }
 ```
+
+**App.test.ts**
+
+```js
+import React from 'react';
+import renderer from 'react-test-renderer';
+import App from './App';
+
+describe('App', () => {
+
+  it('matches snapshot with title', () => {
+    const tree = renderer
+      .create(<App title="Example Title"/>);
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('matches snapshot when no title', () => {
+    const tree = renderer
+      .create(<App/>);
+    expect(tree).toMatchSnapshot();
+  });
+
+});
+```
+
+**App.test.ts.snap**
+
+```js
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches snapshot when no title 1`] = `
+<div
+  className="App"
+>
+  <p
+    className="App-intro"
+  >
+    App Introduction
+  </p>
+  <h2>
+    First List
+  </h2>
+  <ul>
+    <li>
+      foo
+    </li>
+    <li>
+      bar
+    </li>
+    <li>
+      baz
+    </li>
+  </ul>
+  <h2>
+    Second List
+  </h2>
+  <ul>
+    <li>
+      Lorem
+    </li>
+    <li>
+      ipsum
+    </li>
+    <li>
+      dolor
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`App matches snapshot with title 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <h1
+      className="App-title"
+    >
+      Example Title
+    </h1>
+  </header>
+  <p
+    className="App-intro"
+  >
+    App Introduction
+  </p>
+  <h2>
+    First List
+  </h2>
+  <ul>
+    <li>
+      foo
+    </li>
+    <li>
+      bar
+    </li>
+    <li>
+      baz
+    </li>
+  </ul>
+  <h2>
+    Second List
+  </h2>
+  <ul>
+    <li>
+      Lorem
+    </li>
+    <li>
+      ipsum
+    </li>
+    <li>
+      dolor
+    </li>
+  </ul>
+</div>
+`;
+```
