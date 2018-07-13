@@ -110,4 +110,8 @@ For example if we change the `ul` to an `ol` we'll receive the following test er
 
 ## Mocking ReactJs Components
 
-As Jest snapshots will record the full output of a component, this means they'll also record the output of any nested components used within the component your testing.
+As Jest snapshots will record the full output of a component, this means it will also record the output of any nested components used within the component your testing.
+
+This duplicates the testing of the individual components, and will exponentially increase the complexity of the parent components.
+
+For example if our `List` component above was to be consumed by an `App` component, all uses of the `List` component will be outputted in the `App` snapshot.
