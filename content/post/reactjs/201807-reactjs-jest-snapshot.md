@@ -107,3 +107,7 @@ Now that the snapshot has been created, the next time the tests are ran the exis
 For example if we change the `ul` to an `ol` we'll receive the following test error response:
 
 ![](/images/post/reactjs-snapshot-terminal-error.png)
+
+## Mocking ReactJs Components
+
+As Jest snapshots will record the full output of a component, this means they'll also record the output of any nested components used within the component your testing.
