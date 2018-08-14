@@ -13,6 +13,12 @@ menu = ""
 comments = true
 postid = 35
 +++
+
+- [What are Jest Snapshots?](#what-are-jest-snapshots)
+- [Snapshot ReactJs Components](#snapshot-reactjs-components)
+- [Mocking ReactJs Components](#mocking-reactjs-components)
+- [GitHub Repository](#github-repository)
+
 ## What are Jest Snapshots?
 [Jest](https://jestjs.io/) is a javascript unit testing framework developed by Facebook. This is primarily used with React, however can also be used with other frameworks, such as [AngularJs](/post/angularjs/angularjs-jest-unit-testing/).
 
@@ -365,3 +371,11 @@ exports[`App - Mocking matches snapshot with title 1`] = `
 </div>
 `;
 ```
+
+## GitHub Repository
+
+A GitHub repository is available with the above code examples:
+
+https://github.com/curttimson/reactjs-jest-snapshot
+
+Please feel free to clone and let me know if you have any questions!
