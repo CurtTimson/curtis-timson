@@ -1,5 +1,5 @@
 +++
-tags = ["reactjs", "jest", "snapshot", "unit-testing"]
+tags = ["reactjs", "react", "jest", "snapshot", "unit-testing", "mocking"]
 featured = false
 description = "How to use Jest Snapshot unit testing with component mocking in ReactJs"
 date = "2018-07-13T00:00:00"
