@@ -14,6 +14,8 @@ comments = true
 postid = 35
 +++
 
+![ReactJs with Jest Snapshot Testing](/images/post/react-jest-snapshot.png)
+
 - [What are Jest Snapshots?](#what-are-jest-snapshots)
 - [Snapshot ReactJs Components](#snapshot-reactjs-components)
 - [Mocking ReactJs Components](#mocking-reactjs-components)
