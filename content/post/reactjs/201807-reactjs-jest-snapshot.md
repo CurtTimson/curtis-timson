@@ -43,7 +43,7 @@ export default class List extends Component {
 }
 ```
 
-We can write a some snapshot tests to record the expected outcome of this component when various properties are sent.
+We can write some snapshot tests to record the expected outcome of this component when various properties are sent.
 
 The below `List.test.js` file is recording a snapshot of how the `List` component will render when `items` are set or not set.
 
@@ -268,6 +268,100 @@ exports[`App matches snapshot with title 1`] = `
       dolor
     </li>
   </ul>
+</div>
+`;
+```
+
+However we can mock the `List` component so that the implementation is not included in our snapshot tests.
+
+Rather than outputting the `<ul/>` element, we can specify that we want the `List` component to only output `<List/>`:
+
+```js
+jest.mock('./List', () => () => (<list/>));
+```
+
+This will ensure that the `App` tests only cover the logic in the component itself, and not the child `List` component.
+
+![Jest Snapshot Mocking](/images/post/jest-snapshot-mocking.png)
+
+**App.mock.test.ts**
+
+```js
+import React from 'react';
+import renderer from 'react-test-renderer';
+import App from './App';
+import List from './List'; //Import the List component for mocking
+
+jest.mock('./List', () => () => (<list/>)); //Mock the List component as <List/>
+
+describe('App - Mocking', () => {
+
+  it('matches snapshot with title', () => {
+    const tree = renderer
+      .create(<App title="Example Title"/>);
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('matches snapshot when no title', () => {
+    const tree = renderer
+      .create(<App/>);
+    expect(tree).toMatchSnapshot();
+  });
+
+});
+```
+
+**App.Mock.test.js.snap**
+
+```js
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App - Mocking matches snapshot when no title 1`] = `
+<div
+  className="App"
+>
+  <p
+    className="App-intro"
+  >
+    App Introduction
+  </p>
+  <h2>
+    First List
+  </h2>
+  <list />
+  <h2>
+    Second List
+  </h2>
+  <list />
+</div>
+`;
+
+exports[`App - Mocking matches snapshot with title 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <h1
+      className="App-title"
+    >
+      Example Title
+    </h1>
+  </header>
+  <p
+    className="App-intro"
+  >
+    App Introduction
+  </p>
+  <h2>
+    First List
+  </h2>
+  <list />
+  <h2>
+    Second List
+  </h2>
+  <list />
 </div>
 `;
 ```
