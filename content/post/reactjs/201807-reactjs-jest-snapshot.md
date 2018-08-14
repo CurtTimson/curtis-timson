@@ -49,9 +49,9 @@ export default class List extends Component {
 }
 ```
 
-We can write some snapshot tests to record the expected outcome of this component when various properties are sent.
+We can write some snapshot tests to record the expected outcome of this component when various property values are inputted.
 
-The below `List.test.js` file is recording a snapshot of how the `List` component will render when `items` are set or not set.
+The below `List.test.js` file is recording a snapshot of how the `List` component will render when `items` are set, and also when no `items` are set.
 
 ```js
 import React from 'react';
@@ -86,7 +86,7 @@ As there are currently no existing snapshots for `List`, Jest will go ahead and 
 
 ![](/images/post/reactjs-snapshot-terminal.png)
 
-The snapshot will have automatically have been stored in a new folder called `__snapshots__` in the same folder as the component and test file as `List.test.js.snap`.
+The snapshot will have automatically been stored in a new folder called `__snapshots__` in the same folder as the component and test file as `List.test.js.snap`.
 
 ```js
 // Jest Snapshot v1, https://goo.gl/fbAQLP
@@ -110,9 +110,11 @@ exports[`List matches snapshot when items passed in 1`] = `
 
 Now that the snapshot has been created, the next time the tests are ran the existing snapshot will be compared to the tests.
 
-For example if we change the `ul` to an `ol` we'll receive the following test error response:
+For example if we change the `ul` to an `ol` we'll receive the following error response when running `npm run test`:
 
 ![](/images/post/reactjs-snapshot-terminal-error.png)
+
+If it's expected that the test should now fail the failed snapshots can be updated by hitting `u` in the terminal while running tests.
 
 ## Mocking ReactJs Components
 
@@ -280,7 +282,7 @@ exports[`App matches snapshot with title 1`] = `
 
 However we can mock the `List` component so that the implementation is not included in our snapshot tests.
 
-Rather than outputting the `<ul/>` element, we can specify that we want the `List` component to only output `<List/>`:
+Rather than outputting the `<ul/>` element with all it's contents, we can specify that we want the `List` component to only output `<List/>`:
 
 ```js
 jest.mock('./List', () => () => (<list/>));
@@ -374,7 +376,7 @@ exports[`App - Mocking matches snapshot with title 1`] = `
 
 ## GitHub Repository
 
-A GitHub repository is available with the above code examples:
+A public GitHub repository is available with all the above code examples:
 
 https://github.com/curttimson/reactjs-jest-snapshot
 
