@@ -1,14 +1,14 @@
 +++
 tags = ["reactjs", "react", "jest", "snapshot", "unit-testing", "mocking"]
-featured = false
+featured = true
 description = "How to use Jest Snapshot unit testing with component mocking in ReactJs"
-date = "2018-07-13T00:00:00"
+date = "2018-08-14T17:27:00"
 share = true
-#image = "images/post/.png"
+image = "images/post/react-jest.png"
 title = "ReactJs Snapshot unit testing and mocking components"
 slug = "reactjs-jest-snapshot-mocking"
 author = "Curtis Timson"
-draft = true
+draft = false
 menu = ""
 comments = true
 postid = 35
