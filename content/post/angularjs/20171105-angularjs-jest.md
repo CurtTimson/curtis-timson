@@ -151,6 +151,30 @@ angular.module('mathmodule', [])
 ![Jest Code Coverage Failure](/images/post/jest/jest-codecoverage-fail.png)
 
 
+## Testing services with dependencies
+
+If the service has a dependency itself, then this dependency will need to be mocked. For example if the `mathservice` example was being consumed by another service, then that service would mock `mathservice` like so:
+
+```js
+  beforeEach(function(){
+
+    angular.module('mathmodule', []);
+    angular.mock.module('mymodule');
+
+    angular.mock.module(function($provide) {
+      $provide.service('mathservice', function(){
+        return {
+          addTwoNumbers: function(x,y){
+            return x+y;
+          }
+        }
+      });
+    });
+
+  });
+```
+
+
 ## Full Working example
 
 A full working example of this is available on GitHub:
