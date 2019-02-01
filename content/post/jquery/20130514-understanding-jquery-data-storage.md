@@ -88,5 +88,5 @@ In reality you will never need to do this as the data can be accessed far easier
 
 [1]: http://api.jquery.com/data/#data-html5
 [2]: http://jsfiddle.net/tCG8m/
-[3]: http://i.stack.imgur.com/mlcZ7.jpg
+[3]: https://i.stack.imgur.com/mlcZ7.jpg
 [4]: http://jsfiddle.net/tCG8m/1/
