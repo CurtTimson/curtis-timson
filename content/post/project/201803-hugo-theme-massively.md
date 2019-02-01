@@ -21,11 +21,11 @@ https://hugo-theme-massively.netlify.com
 
 Full details on how the theme can be used can be found on the README on the GitHub repo:
 
-https://github.com/curttimson/hugo-theme-massively
+https://github.com/curtistimson/hugo-theme-massively
 
 This is the first theme I've ported over to Hugo so I welcome any feedback.
 
-As always if you find any issues please feel free to [raise them](https://github.com/curttimson/hugo-theme-massively/issues/new) or submit pull requests!
+As always if you find any issues please feel free to [raise them](https://github.com/curtistimson/hugo-theme-massively/issues/new) or submit pull requests!
 
 ## Related Links
 

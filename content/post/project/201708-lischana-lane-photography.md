@@ -46,7 +46,7 @@ To do this a new NodeJs application was created and deployed to Heroku in order 
 
 https://lischana-lane-tweet.herokuapp.com/latest-tweet
 
-This NodeJs application is available as a public GitHub repository, [nodejs-twitter](https://github.com/curttimson/nodejs-twitter) if you would like to make use of it yourself.
+This NodeJs application is available as a public GitHub repository, [nodejs-twitter](https://github.com/curtistimson/nodejs-twitter) if you would like to make use of it yourself.
 
 ## Lastfm nowplaying
 
@@ -58,7 +58,7 @@ This was done by using the lastfm-nowplaying AngularJs module which is currently
 
 Like with nodejs-twitter, this is also available as a public repository:
 
-https://github.com/curttimson/lastfm-nowplaying
+https://github.com/curtistimson/lastfm-nowplaying
 
 It's also available as a node package:
 
@@ -70,4 +70,4 @@ npm install --save lastfm-nowplaying
 
 If you're interested in learning more about this application you can view the source code on GitHub. Feel free to raise any issues you may find!
 
-https://github.com/curttimson/lischana-lane
+https://github.com/curtistimson/lischana-lane

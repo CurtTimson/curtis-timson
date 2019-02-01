@@ -58,7 +58,7 @@ With Hugo you have full control over the HTML which is produced, and it's very e
 
 Like with any code commits on GitHub, blog articles could be easily peer reviewed through [Pull Requests](https://help.github.com/articles/about-pull-requests/) from branches.
 
-Furthermore if the code is kept in a public repository ([such as this one](https://github.com/curttimson/curtis-timson)) then anyone can fork and create a code fix or post typo fix and submit it as a Pull Request.
+Furthermore if the code is kept in a public repository ([such as this one](https://github.com/curtistimson/curtis-timson)) then anyone can fork and create a code fix or post typo fix and submit it as a Pull Request.
 
 ## Disadvantages
 

@@ -58,14 +58,14 @@ https://www.npmjs.com/package/flashing-page-title-notification
 
 Download the minified javascript version from GitHub:
 
-<a href="https://github.com/curttimson/Flashing-Page-Title-Notification/blob/master/dist/PageTitleNotification.min.js" target="_blank">PageTitleNotification.min.js</a>
+<a href="https://github.com/curtistimson/Flashing-Page-Title-Notification/blob/master/dist/PageTitleNotification.min.js" target="_blank">PageTitleNotification.min.js</a>
 
 ## Demo
 
-https://curttimson.github.io/Flashing-Page-Title-Notification/Demo/Index.html
+https://curtistimson.github.io/Flashing-Page-Title-Notification/Demo/Index.html
 
 ## GitHub
 
 Full source code available on GitHub. Please feel free to raise any issues or pull requests!
 
-https://github.com/CurtTimson/Flashing-Page-Title-Notification
+https://github.com/curtistimson/Flashing-Page-Title-Notification
