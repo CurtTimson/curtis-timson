@@ -179,4 +179,4 @@ If the service has a dependency itself, then this dependency will need to be moc
 
 A full working example of this is available on GitHub:
 
-https://github.com/curttimson/angularjs-jest-example
+https://github.com/curtistimson/angularjs-jest-example

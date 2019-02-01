@@ -380,6 +380,6 @@ exports[`App - Mocking matches snapshot with title 1`] = `
 
 A public GitHub repository is available with all the above code examples:
 
-https://github.com/curttimson/reactjs-jest-snapshot
+https://github.com/curtistimson/reactjs-jest-snapshot
 
 Please feel free to clone and let me know if you have any questions!
