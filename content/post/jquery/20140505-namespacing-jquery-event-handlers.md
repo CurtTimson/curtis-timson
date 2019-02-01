@@ -76,6 +76,6 @@ Therefore if `.foo` is then clicked, the browser console will only log:
 "baz"
 ```
 
-<iframe width="100%" height="300" src="http://jsfiddle.net/qasfp/embedded/result,js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="https://jsfiddle.net/qasfp/embedded/result,js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 [1]: http://api.jquery.com/event.namespace/
