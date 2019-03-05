@@ -21,7 +21,6 @@ let lessPath = 'static/less/*.less';
   gulp.task('compile-ct-main-css', () => {
     return gulp.src([
       './node_modules/prismjs/themes/prism-okaidia.css',
-      './node_modules/lastfm-nowplaying/dist/lastfm-nowplaying.min.css',
       './static/css/ct.css'
     ])
     .pipe(cleanCSS())
@@ -34,15 +33,10 @@ let lessPath = 'static/less/*.less';
 gulp.task('compile-ct-vendor-js', () => {
   return gulp.src([
     './node_modules/jquery/dist/jquery.min.js',
-    './node_modules/history.js/scripts/bundled/html4+html5/jquery.history.js',
     './node_modules/imagesloaded/imagesloaded.pkgd.min.js',
-    './node_modules/masonry/dist/masonry.pkgd.min.js',
-    './node_modules/fitvids/jquery.fitvids.js',
     './node_modules/prismjs/prism.js',
     './node_modules/nprogress/nprogress.js',
     './src/js/vendor/gist-embed.min.js',
-    './node_modules/angular/angular.min.js',
-    './node_modules/lastfm-nowplaying/dist/lastfm-nowplaying.min.js'
   ])
   .pipe(uglify())
   .pipe(concat('ct-vendor.js'))

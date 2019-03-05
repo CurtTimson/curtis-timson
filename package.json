@@ -20,7 +20,6 @@
     "gulp": "^4.0.0",
     "gulp-clean-css": "^3.9.4",
     "gulp-concat": "^2.6.1",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-less": "^4.0.1",
     "gulp-uglify": "^3.0.0",
     "require-dir": "^0.3.1"
