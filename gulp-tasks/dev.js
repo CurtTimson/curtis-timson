@@ -6,8 +6,6 @@ let uglify = require('gulp-uglify');
 
 let lessPath = 'static/less/*.less';
 
-gulp.task('dev', ['less-watch']);
-
 //CSS
 (() => {
   gulp.task('less-watch', function(){
@@ -59,3 +57,6 @@ gulp.task('compile-ct-main-js', () => {
   .pipe(concat('ct-main.js'))
   .pipe(gulp.dest('./static/js'));
 });
+
+
+gulp.task('dev', gulp.series('less-watch'));
