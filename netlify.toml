@@ -1,2 +1,11 @@
+[build]
+  publish = "public/"
+
+[build.environment]
+  HUGO_VERSION = "0.54.0"
+
 [context.deploy-preview]
   command = "hugo --config config-preview.toml"
+
+[context.production]
+  command = "hugo --config config-prod.toml"
