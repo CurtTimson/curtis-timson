@@ -18,5 +18,4 @@ $ hugo server
 
 ```
 $ hugo --config config-prod.toml
-$ gulp deploy
 ```
