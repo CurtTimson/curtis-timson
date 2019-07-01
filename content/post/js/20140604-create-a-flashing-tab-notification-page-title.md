@@ -62,7 +62,7 @@ Download the minified javascript version from GitHub:
 
 ## Demo
 
-https://curtistimson.github.io/Flashing-Page-Title-Notification/Demo/Index.html
+https://flashing-page-title-notification.netlify.com/demo
 
 ## GitHub
 
