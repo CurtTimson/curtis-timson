@@ -2,13 +2,13 @@
 tags = ["gatsbyjs", "react", "fouc"]
 featured = false
 description = "How to add a 'no-js' body class with Gatsby to prevent FOUC"
-date = "2019-09-10T00:00:00"
+date = "2019-09-10T10:55:00"
 share = true
 image = "images/post/gatsbylogo.png"
 title = "Adding a body class in GatsbyJs to prevent flashing content"
 slug = "add-body-class-gatsbyjs-fouc"
 author = "Curtis Timson"
-draft = true
+draft = false
 menu = ""
 comments = true
 postid = 36
