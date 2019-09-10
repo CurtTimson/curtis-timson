@@ -13,5 +13,10 @@ menu = ""
 comments = true
 postid = 36
 +++
-Recently I've been working on a GatsbyJs project which includes the use of a theme from [HTML5 UP](https://html5up.net/) which makes use of body classes to prevent [flashing of unstyled content](https://www.paulirish.com/2009/avoiding-the-fouc-v3/).
+Recently I've been working on a GatsbyJs project which includes the use of a theme which makes use of body classes to prevent [flashing of unstyled content](https://www.paulirish.com/2009/avoiding-the-fouc-v3/).
 
+This concept isn't new and has been around for at least a decade, as Paul Irish's post shows, however still appears in modern app implementations.
+
+This post aims to walk you through how to a "no-js" class to the body server-side with GatsbyJs, and then remove it on client load.
+
+## Gatsby Setup
