@@ -29,6 +29,6 @@
     "imagesloaded": "^4.1.1",
     "jquery": "^3.5.0",
     "nprogress": "^0.2.0",
-    "prismjs": "^1.15.0"
+    "prismjs": "^1.21.0"
   }
 }
